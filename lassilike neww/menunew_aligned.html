@@ -1,0 +1,773 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+<meta charset="utf-8"/>
+<meta content="IE=edge" http-equiv="X-UA-Compatible"/>
+<meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0" name="viewport"/>
+<meta content="#000" name="theme-color"/>
+<meta content="#000" name="msapplication-navbutton-color"/>
+<meta content="yes" name="apple-mobile-web-app-capable"/>
+<meta content="#000" name="apple-mobile-web-app-status-bar-style"/>
+<meta content="Discover fresh, handcrafted breads at LassiLike. Enjoy a variety of delicious options baked daily." name="description"/>
+<meta content="bakery, fresh bread, pastries, croissants, sweet bread" name="keywords"/>
+<meta content="LassiLike" name="author"/>
+<link href="assets/images/logo/logo.svg" rel="shortcut icon" type="image/x-icon"/>
+<title>
+  LassiLike - Discover fresh, handcrafted breads at LassiLike. Enjoy a
+  variety of delicious options baked daily.
+    </title>
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"/>
+<link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com" rel="preconnect"/>
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+<link href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400..700;1,400..700&amp;display=swap" rel="stylesheet"/>
+<link href="/menu.css" rel="stylesheet"/>
+<style>
+.menu-list li {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 4px 0;
+}
+.menu-list .price {
+  margin-left: auto;
+  font-weight: bold;
+}
+</style></head>
+<body>
+<header>
+<div class="header-content">
+<div class="logo img">
+          <div class="logo" onclick="window.location.href='index.html'">
+      <img src="assets/images/logo/Adobe Express - file.png" alt="Lassi Like Logo" />
+    </div>
+</div>
+<nav class="navigation">
+<h3 class="pb-2 brand d-none" onclick="window.location.href=''">
+<i class="fa-solid fa-burger fa-bounce" style="color: #c7a17a"></i> Lassi like
+          </h3>
+<li>
+<a class="active" href="index.html" id="home-nav" ><i class="fa-solid fa-house"></i> Home</a>
+</li>
+<li>
+<a href="index.html" id="product-nav"><i class="fa-solid fa-bread-slice"></i> Product List</a>
+</li>
+<li>
+<a href="#" id="service-nav" onclick="scrollToSection(event, 'faq', 'service-nav')"><i class="fa-solid fa-user-gear"></i> Services</a>
+</li>
+<li>
+<a href="index.html" id="order-nav"><i class="fa-solid fa-cart-shopping"></i> Order</a>
+</li>
+<li>
+<a href="index.html" id="about-us"><i class="fa-solid fa-users"></i> About Us</a>
+</li>
+</nav>
+<div class="bars">
+<img alt="hamburger-menu" class="bar" src="/assets/images/others/menu.png"/>
+</div>
+</div>
+</header>
+<section class="menu-section" id="products">
+<div class="container">
+<h2 class="menu-title">Our Menu</h2>
+<!-- Pasta -->
+<h3 class="menu-category">Pasta</h3>
+<div class="one" style="padding: 50px 0 50px 0;"></div>
+<ul class="menu-list">
+<li style="display: flex; justify-content: space-between; align-items: center;">Penne Pasta Mix <span class="price" style="margin-left: auto;"><i class="fa-solid fa-indian-rupee-sign"></i>180/-</span></li>
+<li style="display: flex; justify-content: space-between; align-items: center;">Penne Pasta Chicken <span class="price" style="margin-left: auto;"><i class="fa-solid fa-indian-rupee-sign"></i>180/-</span></li>
+<li style="display: flex; justify-content: space-between; align-items: center;">Penne Pasta White Sauce <span class="price" style="margin-left: auto;"><i class="fa-solid fa-indian-rupee-sign"></i>180/-</span></li>
+<li style="display: flex; justify-content: space-between; align-items: center;">Penne Pasta Pesto Sauce <span class="price" style="margin-left: auto;"><i class="fa-solid fa-indian-rupee-sign"></i>200/-</span></li>
+<li style="display: flex; justify-content: space-between; align-items: center;">Golden Twist <span class="price" style="margin-left: auto;"><i class="fa-solid fa-indian-rupee-sign"></i>200/-</span></li>
+</ul>
+<div class="one" style="padding: 50px 0 50px 0;"></div>
+<!-- Noodles -->
+<h3 class="menu-category">Noodles</h3>
+<div class="one" style="padding: 50px 0 50px 0;"></div>
+<ul class="menu-list">
+<li style="display: flex; justify-content: space-between; align-items: center;">Veg Noodles <span class="price" style="margin-left: auto;"><i class="fa-solid fa-indian-rupee-sign"></i>140/-</span></li>
+<li style="display: flex; justify-content: space-between; align-items: center;">Chicken Noodles <span class="price" style="margin-left: auto;"><i class="fa-solid fa-indian-rupee-sign"></i>160/-</span></li>
+<li style="display: flex; justify-content: space-between; align-items: center;">Egg Noodles <span class="price" style="margin-left: auto;"><i class="fa-solid fa-indian-rupee-sign"></i>150/-</span></li>
+<li style="display: flex; justify-content: space-between; align-items: center;">Schezwan Noodles <span class="price" style="margin-left: auto;"><i class="fa-solid fa-indian-rupee-sign"></i>160/-</span></li>
+<li style="display: flex; justify-content: space-between; align-items: center;">Schezwan Chi Noodles <span class="price" style="margin-left: auto;"><i class="fa-solid fa-indian-rupee-sign"></i>180/-</span></li>
+<li style="display: flex; justify-content: space-between; align-items: center;">Schezwan Veg Noodles <span class="price" style="margin-left: auto;"><i class="fa-solid fa-indian-rupee-sign"></i>170/-</span></li>
+<li style="display: flex; justify-content: space-between; align-items: center;">Schezwan Egg Noodles <span class="price" style="margin-left: auto;"><i class="fa-solid fa-indian-rupee-sign"></i>170/-</span></li>
+</ul>
+<div class="one" style="padding: 50px 0 50px 0;"></div>
+<!-- Grilled with Rice -->
+<h3 class="menu-category">Grilled with Rice</h3>
+<div class="one" style="padding: 50px 0 50px 0;"></div>
+<ul class="menu-list">
+<li style="display: flex; justify-content: space-between; align-items: center;">Al Faham With Rice <span class="price" style="margin-left: auto;"><i class="fa-solid fa-indian-rupee-sign"></i>700/-, <i class="fa-solid fa-indian-rupee-sign"></i>350/-, <i class="fa-solid fa-indian-rupee-sign"></i>175/-</span></li>
+<li style="display: flex; justify-content: space-between; align-items: center;">Shawaya With Rice <span class="price" style="margin-left: auto;"><i class="fa-solid fa-indian-rupee-sign"></i>700/-, <i class="fa-solid fa-indian-rupee-sign"></i>350/-</span></li>
+<li style="display: flex; justify-content: space-between; align-items: center;">Brosted With Rice <span class="price" style="margin-left: auto;"><i class="fa-solid fa-indian-rupee-sign"></i>750/-, <i class="fa-solid fa-indian-rupee-sign"></i>375/-</span></li>
+<li style="display: flex; justify-content: space-between; align-items: center;">Mix Grill With Rice <span class="price" style="margin-left: auto;"><i class="fa-solid fa-indian-rupee-sign"></i>750/-, <i class="fa-solid fa-indian-rupee-sign"></i>375/-</span></li>
+</ul>
+<div class="one" style="padding: 50px 0 50px 0;"></div>
+<!-- Shakes -->
+<h3 class="menu-category">Shakes</h3>
+<div class="one" style="padding: 50px 0 50px 0;"></div>
+<ul class="menu-list">
+<li style="display: flex; justify-content: space-between; align-items: center;">Sharja Shake <span class="price" style="margin-left: auto;"><i class="fa-solid fa-indian-rupee-sign"></i>60/-</span></li>
+<li style="display: flex; justify-content: space-between; align-items: center;">Papaya Shake <span class="price" style="margin-left: auto;"><i class="fa-solid fa-indian-rupee-sign"></i>60/-</span></li>
+<li style="display: flex; justify-content: space-between; align-items: center;">Chikku Shake <span class="price" style="margin-left: auto;"><i class="fa-solid fa-indian-rupee-sign"></i>70/-</span></li>
+<li style="display: flex; justify-content: space-between; align-items: center;">Apple Shake <span class="price" style="margin-left: auto;"><i class="fa-solid fa-indian-rupee-sign"></i>70/-</span></li>
+<li style="display: flex; justify-content: space-between; align-items: center;">Belgium (CHO) <span class="price" style="margin-left: auto;"><i class="fa-solid fa-indian-rupee-sign"></i>70/-</span></li>
+<li style="display: flex; justify-content: space-between; align-items: center;">Ferrero Rocher <span class="price" style="margin-left: auto;"><i class="fa-solid fa-indian-rupee-sign"></i>70/-</span></li>
+<li style="display: flex; justify-content: space-between; align-items: center;">Beaten Shake <span class="price" style="margin-left: auto;"><i class="fa-solid fa-indian-rupee-sign"></i>70/-</span></li>
+<li style="display: flex; justify-content: space-between; align-items: center;">Soudhi Shake <span class="price" style="margin-left: auto;"><i class="fa-solid fa-indian-rupee-sign"></i>70/-</span></li>
+<li style="display: flex; justify-content: space-between; align-items: center;">Mango Shake <span class="price" style="margin-left: auto;"><i class="fa-solid fa-indian-rupee-sign"></i>70/-</span></li>
+<li style="display: flex; justify-content: space-between; align-items: center;">Cold Coffee <span class="price" style="margin-left: auto;"><i class="fa-solid fa-indian-rupee-sign"></i>70/-</span></li>
+<li style="display: flex; justify-content: space-between; align-items: center;">Cold Boost <span class="price" style="margin-left: auto;"><i class="fa-solid fa-indian-rupee-sign"></i>70/-</span></li>
+<li style="display: flex; justify-content: space-between; align-items: center;">Falak Shake <span class="price" style="margin-left: auto;"><i class="fa-solid fa-indian-rupee-sign"></i>80/-</span></li>
+<li style="display: flex; justify-content: space-between; align-items: center;">Avocado Shake <span class="price" style="margin-left: auto;"><i class="fa-solid fa-indian-rupee-sign"></i>80/-</span></li>
+<li style="display: flex; justify-content: space-between; align-items: center;">Lassi Like (SPL) <span class="price" style="margin-left: auto;"><i class="fa-solid fa-indian-rupee-sign"></i>80/-</span></li>
+<li style="display: flex; justify-content: space-between; align-items: center;">Papaya with Dates <span class="price" style="margin-left: auto;"><i class="fa-solid fa-indian-rupee-sign"></i>80/-</span></li>
+</ul>
+<div class="one" style="padding: 50px 0 50px 0;"></div>
+<!-- Lassi -->
+<h3 class="menu-category">Lassi</h3> <div class="one" style="padding: 50px 0 50px 0;"></div>
+<ul class="menu-list">
+<li style="display: flex; justify-content: space-between; align-items: center;">Sweet Lassi <span class="price" style="margin-left: auto;"><i class="fa-solid fa-indian-rupee-sign"></i>40/-</span></li>
+<li style="display: flex; justify-content: space-between; align-items: center;">Mango Lassi <span class="price" style="margin-left: auto;"><i class="fa-solid fa-indian-rupee-sign"></i>60/-</span></li>
+<li style="display: flex; justify-content: space-between; align-items: center;">Avocado Lassi <span class="price" style="margin-left: auto;"><i class="fa-solid fa-indian-rupee-sign"></i>70/-</span></li>
+<li style="display: flex; justify-content: space-between; align-items: center;">Soda Lassi <span class="price" style="margin-left: auto;"><i class="fa-solid fa-indian-rupee-sign"></i>50/-</span></li>
+<li style="display: flex; justify-content: space-between; align-items: center;">Watermelon Lassi <span class="price" style="margin-left: auto;"><i class="fa-solid fa-indian-rupee-sign"></i>70/-</span></li>
+</ul>
+<div class="one" style="padding: 50px 0 50px 0;"></div>
+<!-- Thunder -->
+<h3 class="menu-category">Thunder</h3>
+<div class="one" style="padding: 50px 0 50px 0;"></div>
+<ul class="menu-list">
+<li style="display: flex; justify-content: space-between; align-items: center;">Lime Soda <span class="price" style="margin-left: auto;"><i class="fa-solid fa-indian-rupee-sign"></i>30/-</span></li>
+<li style="display: flex; justify-content: space-between; align-items: center;">Lime Mint <span class="price" style="margin-left: auto;"><i class="fa-solid fa-indian-rupee-sign"></i>40/-</span></li>
+<li style="display: flex; justify-content: space-between; align-items: center;">Watermelon Soda <span class="price" style="margin-left: auto;"><i class="fa-solid fa-indian-rupee-sign"></i>50/-</span></li>
+<li style="display: flex; justify-content: space-between; align-items: center;">Watermelon Mojito <span class="price" style="margin-left: auto;"><i class="fa-solid fa-indian-rupee-sign"></i>70/-</span></li>
+<li style="display: flex; justify-content: space-between; align-items: center;">Mojito <span class="price" style="margin-left: auto;"><i class="fa-solid fa-indian-rupee-sign"></i>60/-</span></li>
+<li style="display: flex; justify-content: space-between; align-items: center;">Dry Fruit Mojito <span class="price" style="margin-left: auto;"><i class="fa-solid fa-indian-rupee-sign"></i>80/-</span></li>
+<li style="display: flex; justify-content: space-between; align-items: center;">Avocado Mojito <span class="price" style="margin-left: auto;"><i class="fa-solid fa-indian-rupee-sign"></i>80/-</span></li>
+<li style="display: flex; justify-content: space-between; align-items: center;">Apple Mojito <span class="price" style="margin-left: auto;"><i class="fa-solid fa-indian-rupee-sign"></i>70/-</span></li>
+<li style="display: flex; justify-content: space-between; align-items: center;">Pineapple Mojito <span class="price" style="margin-left: auto;"><i class="fa-solid fa-indian-rupee-sign"></i>70/-</span></li>
+<li style="display: flex; justify-content: space-between; align-items: center;">Blue Mojito <span class="price" style="margin-left: auto;"><i class="fa-solid fa-indian-rupee-sign"></i>60/-</span></li>
+</ul>
+<div class="one" style="padding: 50px 0 50px 0;"></div>
+<!-- Burger Item-->
+<h3 class="menu-category">Burger Items</h3>
+<div class="one" style="padding: 50px 0 50px 0;"></div>
+<ul class="menu-list">
+<li style="display: flex; justify-content: space-between; align-items: center;">Normal Chicken Burger<span class="price" style="margin-left: auto;"><i class="fa-solid fa-indian-rupee-sign"></i>80/-</span></li>
+<li style="display: flex; justify-content: space-between; align-items: center;">Combo Chicken Burger<span class="price" style="margin-left: auto;"><i class="fa-solid fa-indian-rupee-sign"></i>120/-</span></li>
+<li style="display: flex; justify-content: space-between; align-items: center;">Normal Veg Burger<span class="price" style="margin-left: auto;"><i class="fa-solid fa-indian-rupee-sign"></i>170/-</span></li>
+<li style="display: flex; justify-content: space-between; align-items: center;">Combo Veg Burger <span class="price" style="margin-left: auto;"><i class="fa-solid fa-indian-rupee-sign"></i>110/-</span></li>
+<li style="display: flex; justify-content: space-between; align-items: center;">Normal Zinger Burger <span class="price" style="margin-left: auto;"><i class="fa-solid fa-indian-rupee-sign"></i>100/-</span></li>
+<li style="display: flex; justify-content: space-between; align-items: center;">Normal Fillet Burger <span class="price" style="margin-left: auto;"><i class="fa-solid fa-indian-rupee-sign"></i>120/-</span></li>
+<li style="display: flex; justify-content: space-between; align-items: center;">Combo Zinger Burger <span class="price" style="margin-left: auto;"><i class="fa-solid fa-indian-rupee-sign"></i>140/-</span></li>
+<li style="display: flex; justify-content: space-between; align-items: center;">Combo Fillet  Burger <span class="price" style="margin-left: auto;"><i class="fa-solid fa-indian-rupee-sign"></i>120/-</span></li>
+<li style="display: flex; justify-content: space-between; align-items: center;">Normal Tikka Burger <span class="price" style="margin-left: auto;"><i class="fa-solid fa-indian-rupee-sign"></i>80/-</span></li>
+<li style="display: flex; justify-content: space-between; align-items: center;">Combo Tikka Burger <span class="price" style="margin-left: auto;"><i class="fa-solid fa-indian-rupee-sign"></i>120/-</span></li>
+<li style="display: flex; justify-content: space-between; align-items: center;">Normal Nugget Burger <span class="price" style="margin-left: auto;"><i class="fa-solid fa-indian-rupee-sign"></i>80/-</span></li>
+<li style="display: flex; justify-content: space-between; align-items: center;">Combo Nugget Burger <span class="price" style="margin-left: auto;"><i class="fa-solid fa-indian-rupee-sign"></i>120/-</span></li>
+</ul>
+<div class="one" style="padding: 50px 0 50px 0;"></div>
+<!-- Grilled Burger -->
+<h3 class="menu-category">Grilled Burger</h3>
+<div class="one" style="padding: 50px 0 50px 0;"></div>
+<ul class="menu-list">
+<li style="display: flex; justify-content: space-between; align-items: center;">Cheetos Dynamic<span class="price" style="margin-left: auto;"><i class="fa-solid fa-indian-rupee-sign"></i>180/-</span></li>
+<li style="display: flex; justify-content: space-between; align-items: center;">Lassi Signature<span class="price" style="margin-left: auto;"><i class="fa-solid fa-indian-rupee-sign"></i>200/-</span></li>
+<li style="display: flex; justify-content: space-between; align-items: center;">Cheesy Beef<span class="price" style="margin-left: auto;"><i class="fa-solid fa-indian-rupee-sign"></i>200/-</span></li>
+<li style="display: flex; justify-content: space-between; align-items: center;">Cheetos Crunchy <span class="price" style="margin-left: auto;"><i class="fa-solid fa-indian-rupee-sign"></i>200/-</span></li>
+<li style="display: flex; justify-content: space-between; align-items: center;">Donar Chicken Cheetos <span class="price" style="margin-left: auto;"><i class="fa-solid fa-indian-rupee-sign"></i>200/-</span></li>
+<li style="display: flex; justify-content: space-between; align-items: center;">Grilled Chicken  Burger <span class="price" style="margin-left: auto;"><i class="fa-solid fa-indian-rupee-sign"></i>210/-</span></li>
+</ul>
+<div class="one" style="padding: 50px 0 50px 0;"></div>
+<!-- Combo Sandwiches-->
+<h3 class="menu-category">Combo Sandwiches</h3>
+<div class="one" style="padding: 50px 0 50px 0;"></div>
+<ul class="menu-list">
+<li style="display: flex; justify-content: space-between; align-items: center;">Zinger Mathafi<span class="price" style="margin-left: auto;"><i class="fa-solid fa-indian-rupee-sign"></i>160/-</span></li>
+<li style="display: flex; justify-content: space-between; align-items: center;">Zinker Cheetos<span class="price" style="margin-left: auto;"><i class="fa-solid fa-indian-rupee-sign"></i>160/-</span></li>
+<li style="display: flex; justify-content: space-between; align-items: center;">Italian Zinger<span class="price" style="margin-left: auto;"><i class="fa-solid fa-indian-rupee-sign"></i>160/-</span></li>
+<li style="display: flex; justify-content: space-between; align-items: center;">Spanish Zinger <span class="price" style="margin-left: auto;"><i class="fa-solid fa-indian-rupee-sign"></i>160/-</span></li>
+<li style="display: flex; justify-content: space-between; align-items: center;">Chicken Nuggets <span class="price" style="margin-left: auto;"><i class="fa-solid fa-indian-rupee-sign"></i>140/-</span></li>
+<li style="display: flex; justify-content: space-between; align-items: center;">Chicken Lemon<span class="price" style="margin-left: auto;"><i class="fa-solid fa-indian-rupee-sign"></i>120/-</span></li>
+<li style="display: flex; justify-content: space-between; align-items: center;">Chicken Tikka <span class="price" style="margin-left: auto;"><i class="fa-solid fa-indian-rupee-sign"></i>140/-</span></li>
+<li style="display: flex; justify-content: space-between; align-items: center;">Chicken Hotdog <span class="price" style="margin-left: auto;"><i class="fa-solid fa-indian-rupee-sign"></i>120/-</span></li>
+<li style="display: flex; justify-content: space-between; align-items: center;">Chicken Fillet <span class="price" style="margin-left: auto;"><i class="fa-solid fa-indian-rupee-sign"></i>140/-</span></li>
+<li style="display: flex; justify-content: space-between; align-items: center;">Zinger Chicken <span class="price" style="margin-left: auto;"><i class="fa-solid fa-indian-rupee-sign"></i>140/-</span></li>
+<li style="display: flex; justify-content: space-between; align-items: center;">BBQ Crunchy Chicken <span class="price" style="margin-left: auto;"><i class="fa-solid fa-indian-rupee-sign"></i>160/-</span></li>
+</ul>
+<div class="one" style="padding: 50px 0 50px 0;"></div>
+<!--  Sandwiches-->
+<h3 class="menu-category"> Sandwiches</h3>
+<div class="one" style="padding: 50px 0 50px 0;"></div>
+<ul class="menu-list">
+<li style="display: flex; justify-content: space-between; align-items: center;">Zinger Sandwich<span class="price" style="margin-left: auto;"><i class="fa-solid fa-indian-rupee-sign"></i>90/-</span></li>
+<li style="display: flex; justify-content: space-between; align-items: center;">Fillet Sandwich<span class="price" style="margin-left: auto;"><i class="fa-solid fa-indian-rupee-sign"></i>90/-</span></li>
+<li style="display: flex; justify-content: space-between; align-items: center;">Tikka Sandwich<span class="price" style="margin-left: auto;"><i class="fa-solid fa-indian-rupee-sign"></i>90/-</span></li>
+<li style="display: flex; justify-content: space-between; align-items: center;">Chi Mayo Sandwich <span class="price" style="margin-left: auto;"><i class="fa-solid fa-indian-rupee-sign"></i>70/-</span></li>
+<li style="display: flex; justify-content: space-between; align-items: center;">Shishtwook Sandwich <span class="price" style="margin-left: auto;"><i class="fa-solid fa-indian-rupee-sign"></i>90/-</span></li>
+<li style="display: flex; justify-content: space-between; align-items: center;">Nugest Sandwich<span class="price" style="margin-left: auto;"><i class="fa-solid fa-indian-rupee-sign"></i>90/-</span></li>
+</ul>
+<div class="one" style="padding: 50px 0 50px 0;"></div>
+<!-- Club Sandwiches-->
+<h3 class="menu-category">Combo Sandwiches</h3>
+<div class="one" style="padding: 50px 0 50px 0;"></div>
+<ul class="menu-list">
+<li style="display: flex; justify-content: space-between; align-items: center;">Family Club<span class="price" style="margin-left: auto;"><i class="fa-solid fa-indian-rupee-sign"></i>650/-</span></li>
+<li style="display: flex; justify-content: space-between; align-items: center;">Healthy Club<span class="price" style="margin-left: auto;"><i class="fa-solid fa-indian-rupee-sign"></i>180/-</span></li>
+<li style="display: flex; justify-content: space-between; align-items: center;">HotDog Club<span class="price" style="margin-left: auto;"><i class="fa-solid fa-indian-rupee-sign"></i>130/-</span></li>
+<li style="display: flex; justify-content: space-between; align-items: center;">Veg Club <span class="price" style="margin-left: auto;"><i class="fa-solid fa-indian-rupee-sign"></i>120/-</span></li>
+<li style="display: flex; justify-content: space-between; align-items: center;"> Chilli Chicken Club <span class="price" style="margin-left: auto;"><i class="fa-solid fa-indian-rupee-sign"></i>140/-</span></li>
+<li style="display: flex; justify-content: space-between; align-items: center;">Zinger Club<span class="price" style="margin-left: auto;"><i class="fa-solid fa-indian-rupee-sign"></i>150/-</span></li>
+<li style="display: flex; justify-content: space-between; align-items: center;">Chicken Club <span class="price" style="margin-left: auto;"><i class="fa-solid fa-indian-rupee-sign"></i>140/-</span></li>
+<li style="display: flex; justify-content: space-between; align-items: center;">Lulu Club <span class="price" style="margin-left: auto;"><i class="fa-solid fa-indian-rupee-sign"></i>140/-</span></li>
+<li style="display: flex; justify-content: space-between; align-items: center;">Shawarma Club <span class="price" style="margin-left: auto;"><i class="fa-solid fa-indian-rupee-sign"></i>140/-</span></li>
+<li style="display: flex; justify-content: space-between; align-items: center;">Chicken Tikka Club <span class="price" style="margin-left: auto;"><i class="fa-solid fa-indian-rupee-sign"></i>140/-</span></li>
+<li style="display: flex; justify-content: space-between; align-items: center;">Lassi Like Club <span class="price" style="margin-left: auto;"><i class="fa-solid fa-indian-rupee-sign"></i>160/-</span></li>
+</ul>
+<div class="one" style="padding: 50px 0 50px 0;"></div>
+<!-- Shawarma-->
+<h3 class="menu-category">Shawarma</h3>
+<div class="one" style="padding: 50px 0 50px 0;"></div>
+<ul class="menu-list">
+<li style="display: flex; justify-content: space-between; align-items: center;">Shawarma <span class="price" style="margin-left: auto;"><i class="fa-solid fa-indian-rupee-sign"></i>80/-</span></li>
+<li style="display: flex; justify-content: space-between; align-items: center;">Shawarma Poratta <span class="price" style="margin-left: auto;"><i class="fa-solid fa-indian-rupee-sign"></i>90/-</span></li>
+<li style="display: flex; justify-content: space-between; align-items: center;">Shawarma Rumali <span class="price" style="margin-left: auto;"><i class="fa-solid fa-indian-rupee-sign"></i>100/-</span></li>
+<li style="display: flex; justify-content: space-between; align-items: center;">Shawarma Mexican <span class="price" style="margin-left: auto;"><i class="fa-solid fa-indian-rupee-sign"></i>90/-, 110/-</span></li>
+<li style="display: flex; justify-content: space-between; align-items: center;">Hassan Mathar <span class="price" style="margin-left: auto;"><i class="fa-solid fa-indian-rupee-sign"></i>110/-</span></li>
+<li style="display: flex; justify-content: space-between; align-items: center;">Arabic Shawarma <span class="price" style="margin-left: auto;"><i class="fa-solid fa-indian-rupee-sign"></i>200/-</span></li>
+<li style="display: flex; justify-content: space-between; align-items: center;">Shawarma Plate <span class="price" style="margin-left: auto;"><i class="fa-solid fa-indian-rupee-sign"></i>220/-</span></li>
+</ul>
+<div class="one" style="padding: 50px 0 50px 0;"></div>
+<!-- Wrap Sandwiches-->
+<h3 class="menu-category">Wrap Sandwiches</h3>
+<div class="one" style="padding: 50px 0 50px 0;"></div>
+<ul class="menu-list">
+<li style="display: flex; justify-content: space-between; align-items: center;">Twister Wrap <span class="price" style="margin-left: auto;"><i class="fa-solid fa-indian-rupee-sign"></i>140/-</span></li>
+<li style="display: flex; justify-content: space-between; align-items: center;">Zinger Wrap <span class="price" style="margin-left: auto;"><i class="fa-solid fa-indian-rupee-sign"></i>140/-</span></li>
+<li style="display: flex; justify-content: space-between; align-items: center;">Hotdog Wrap <span class="price" style="margin-left: auto;"><i class="fa-solid fa-indian-rupee-sign"></i>120/-</span></li>
+<li style="display: flex; justify-content: space-between; align-items: center;">Mathafi Wrap <span class="price" style="margin-left: auto;"><i class="fa-solid fa-indian-rupee-sign"></i>160/-</span></li>
+<li style="display: flex; justify-content: space-between; align-items: center;">Kabab Wrap <span class="price" style="margin-left: auto;"><i class="fa-solid fa-indian-rupee-sign"></i>100/-</span></li>
+<li style="display: flex; justify-content: space-between; align-items: center;">Falafel Wrap <span class="price" style="margin-left: auto;"><i class="fa-solid fa-indian-rupee-sign"></i>80/-</span></li>
+<li style="display: flex; justify-content: space-between; align-items: center;">EGG Wrap <span class="price" style="margin-left: auto;"><i class="fa-solid fa-indian-rupee-sign"></i>80/-</span></li>
+<li style="display: flex; justify-content: space-between; align-items: center;">Cooku Arabi <span class="price" style="margin-left: auto;"><i class="fa-solid fa-indian-rupee-sign"></i>160/-</span></li>
+<li style="display: flex; justify-content: space-between; align-items: center;">Chick Fantasia <span class="price" style="margin-left: auto;"><i class="fa-solid fa-indian-rupee-sign"></i>160/-</span></li>
+<li style="display: flex; justify-content: space-between; align-items: center;">Chilly Willy Mirch <span class="price" style="margin-left: auto;"><i class="fa-solid fa-indian-rupee-sign"></i>140/-</span></li>
+<li style="display: flex; justify-content: space-between; align-items: center;">Lassi Like Wrap <span class="price" style="margin-left: auto;"><i class="fa-solid fa-indian-rupee-sign"></i>160/-</span></li>
+<li style="display: flex; justify-content: space-between; align-items: center;">Sheesh Tawook Wrap <span class="price" style="margin-left: auto;"><i class="fa-solid fa-indian-rupee-sign"></i>160/-</span></li>
+<li style="display: flex; justify-content: space-between; align-items: center;">Zinker Arabic <span class="price" style="margin-left: auto;"><i class="fa-solid fa-indian-rupee-sign"></i>140/-</span></li>
+</ul>
+<div class="one" style="padding: 50px 0 50px 0;"></div>
+<!-- POROTTA -->
+<h3 class="menu-category">Porotta</h3>
+<div class="one" style="padding: 50px 0 50px 0;"></div>
+<ul class="menu-list">
+<li style="display: flex; justify-content: space-between; align-items: center;">Chi. Chilly Porotta <span class="price" style="margin-left: auto;"><i class="fa-solid fa-indian-rupee-sign"></i>70/-</span></li>
+<li style="display: flex; justify-content: space-between; align-items: center;">Zinger Porotta <span class="price" style="margin-left: auto;"><i class="fa-solid fa-indian-rupee-sign"></i>80/-</span></li>
+<li style="display: flex; justify-content: space-between; align-items: center;">Nissan Porotta <span class="price" style="margin-left: auto;"><i class="fa-solid fa-indian-rupee-sign"></i>80/-</span></li>
+<li style="display: flex; justify-content: space-between; align-items: center;">Mustang <span class="price" style="margin-left: auto;"><i class="fa-solid fa-indian-rupee-sign"></i>80/-</span></li>
+<li style="display: flex; justify-content: space-between; align-items: center;">Rolls Royce <span class="price" style="margin-left: auto;"><i class="fa-solid fa-indian-rupee-sign"></i>80/-</span></li>
+<li style="display: flex; justify-content: space-between; align-items: center;">FJ Cruiser <span class="price" style="margin-left: auto;"><i class="fa-solid fa-indian-rupee-sign"></i>80/-</span></li>
+<li style="display: flex; justify-content: space-between; align-items: center;">Ferrari <span class="price" style="margin-left: auto;"><i class="fa-solid fa-indian-rupee-sign"></i>80/-</span></li>
+<li style="display: flex; justify-content: space-between; align-items: center;">Lamborghini <span class="price" style="margin-left: auto;"><i class="fa-solid fa-indian-rupee-sign"></i>80/-</span></li>
+<li style="display: flex; justify-content: space-between; align-items: center;">Francisco <span class="price" style="margin-left: auto;"><i class="fa-solid fa-indian-rupee-sign"></i>80/-</span></li>
+<li style="display: flex; justify-content: space-between; align-items: center;">Chicken Mayonnaise Sandwich <span class="price" style="margin-left: auto;"><i class="fa-solid fa-indian-rupee-sign"></i>60/-</span></li>
+<li style="display: flex; justify-content: space-between; align-items: center;">Hotdog Porotta <span class="price" style="margin-left: auto;"><i class="fa-solid fa-indian-rupee-sign"></i>60/-</span></li>
+<li style="display: flex; justify-content: space-between; align-items: center;">Porotta Nutella <span class="price" style="margin-left: auto;"><i class="fa-solid fa-indian-rupee-sign"></i>50/-</span></li>
+<li style="display: flex; justify-content: space-between; align-items: center;">Chi. Tikka Porotta <span class="price" style="margin-left: auto;"><i class="fa-solid fa-indian-rupee-sign"></i>70/-</span></li>
+<li style="display: flex; justify-content: space-between; align-items: center;">Falafel Porotta <span class="price" style="margin-left: auto;"><i class="fa-solid fa-indian-rupee-sign"></i>70/-</span></li>
+<li style="display: flex; justify-content: space-between; align-items: center;">EGG With Oman Chips Porotta <span class="price" style="margin-left: auto;"><i class="fa-solid fa-indian-rupee-sign"></i>60/-</span></li>
+<li style="display: flex; justify-content: space-between; align-items: center;">Omelette Porotta <span class="price" style="margin-left: auto;"><i class="fa-solid fa-indian-rupee-sign"></i>60/-</span></li>
+<li style="display: flex; justify-content: space-between; align-items: center;">EGG Porotta <span class="price" style="margin-left: auto;"><i class="fa-solid fa-indian-rupee-sign"></i>50/-</span></li>
+</ul>
+<div class="one" style="padding: 50px 0 50px 0;"></div>
+<!-- GRILL ITEMS -->
+<h3 class="menu-category">Grill Items</h3>
+<div class="one" style="padding: 50px 0 50px 0;"></div>
+<ul class="menu-list">
+<li style="display: flex; justify-content: space-between; align-items: center;">Mix Grill (Tikka Shish Tawook) <span class="price" style="margin-left: auto;"><i class="fa-solid fa-indian-rupee-sign"></i>550/-</span></li>
+<li style="display: flex; justify-content: space-between; align-items: center;">Spicy Chicken Charcoal <span class="price" style="margin-left: auto;"><i class="fa-solid fa-indian-rupee-sign"></i>470/-, 235/-, 120/-</span></li>
+<li style="display: flex; justify-content: space-between; align-items: center;">Normal Chi. Charcoal <span class="price" style="margin-left: auto;"><i class="fa-solid fa-indian-rupee-sign"></i>440/-, 220/-, 110/-</span></li>
+<li style="display: flex; justify-content: space-between; align-items: center;">Green Chilli Chi. Charcoal <span class="price" style="margin-left: auto;"><i class="fa-solid fa-indian-rupee-sign"></i>470/-, 235/-, 120/-</span></li>
+<li style="display: flex; justify-content: space-between; align-items: center;">Pepper Chi. Charcoal <span class="price" style="margin-left: auto;"><i class="fa-solid fa-indian-rupee-sign"></i>470/-, 235/-, 120/-</span></li>
+<li style="display: flex; justify-content: space-between; align-items: center;">Peri Peri Chi. Charcoal <span class="price" style="margin-left: auto;"><i class="fa-solid fa-indian-rupee-sign"></i>460/-, 230/-, 115/-</span></li>
+<li style="display: flex; justify-content: space-between; align-items: center;">Grill Chicken <span class="price" style="margin-left: auto;"><i class="fa-solid fa-indian-rupee-sign"></i>440/-, 220/-</span></li>
+</ul>
+<div class="one" style="padding: 50px 0 50px 0;"></div>
+<!-- SALAD -->
+<h3 class="menu-category">Salad</h3>
+<div class="one" style="padding: 50px 0 50px 0;"></div>
+<ul class="menu-list">
+<li style="display: flex; justify-content: space-between; align-items: center;">Green Mango <span class="price" style="margin-left: auto;"><i class="fa-solid fa-indian-rupee-sign"></i>90/-</span></li>
+<li style="display: flex; justify-content: space-between; align-items: center;">Avocado With Chicken <span class="price" style="margin-left: auto;"><i class="fa-solid fa-indian-rupee-sign"></i>180/-</span></li>
+<li style="display: flex; justify-content: space-between; align-items: center;">Sweet &amp; Honey <span class="price" style="margin-left: auto;"><i class="fa-solid fa-indian-rupee-sign"></i>220/-</span></li>
+<li style="display: flex; justify-content: space-between; align-items: center;">Arabic <span class="price" style="margin-left: auto;"><i class="fa-solid fa-indian-rupee-sign"></i>180/-</span></li>
+<li style="display: flex; justify-content: space-between; align-items: center;">Fattoush <span class="price" style="margin-left: auto;"><i class="fa-solid fa-indian-rupee-sign"></i>180/-</span></li>
+<li style="display: flex; justify-content: space-between; align-items: center;">Dry Fruits <span class="price" style="margin-left: auto;"><i class="fa-solid fa-indian-rupee-sign"></i>220/-</span></li>
+</ul>
+<div class="one" style="padding: 50px 0 50px 0;"></div>
+<!-- SPECIAL SHAKE -->
+<h3 class="menu-category">Special Shake</h3>
+<div class="one" style="padding: 50px 0 50px 0;"></div>
+<ul class="menu-list">
+<li style="display: flex; justify-content: space-between; align-items: center;">Kitkat Shake <span class="price" style="margin-left: auto;"><i class="fa-solid fa-indian-rupee-sign"></i>90/-</span></li>
+<li style="display: flex; justify-content: space-between; align-items: center;">Dairy Milk Shake <span class="price" style="margin-left: auto;"><i class="fa-solid fa-indian-rupee-sign"></i>90/-</span></li>
+<li style="display: flex; justify-content: space-between; align-items: center;">Oreo Shake <span class="price" style="margin-left: auto;"><i class="fa-solid fa-indian-rupee-sign"></i>90/-</span></li>
+<li style="display: flex; justify-content: space-between; align-items: center;">Snickers Shake <span class="price" style="margin-left: auto;"><i class="fa-solid fa-indian-rupee-sign"></i>90/-</span></li>
+<li style="display: flex; justify-content: space-between; align-items: center;">Brownie Shake <span class="price" style="margin-left: auto;"><i class="fa-solid fa-indian-rupee-sign"></i>100/-</span></li>
+<li style="display: flex; justify-content: space-between; align-items: center;">Nutella Ticker Shake <span class="price" style="margin-left: auto;"><i class="fa-solid fa-indian-rupee-sign"></i>100/-</span></li>
+<li style="display: flex; justify-content: space-between; align-items: center;">Peanut Butter Shake <span class="price" style="margin-left: auto;"><i class="fa-solid fa-indian-rupee-sign"></i>100/-</span></li>
+<li style="display: flex; justify-content: space-between; align-items: center;">Dry Fruit Shake <span class="price" style="margin-left: auto;"><i class="fa-solid fa-indian-rupee-sign"></i>100/-</span></li>
+<li style="display: flex; justify-content: space-between; align-items: center;">Lotus Shake <span class="price" style="margin-left: auto;"><i class="fa-solid fa-indian-rupee-sign"></i>110/-</span></li>
+</ul>
+<div class="one" style="padding: 50px 0 50px 0;"></div>
+<!-- ICE CREAM SHAKE -->
+<h3 class="menu-category">Ice Cream Shake</h3>
+<div class="one" style="padding: 50px 0 50px 0;"></div>
+<ul class="menu-list">
+<li style="display: flex; justify-content: space-between; align-items: center;">Vanilla Shake <span class="price" style="margin-left: auto;"><i class="fa-solid fa-indian-rupee-sign"></i>90/-</span></li>
+<li style="display: flex; justify-content: space-between; align-items: center;">Chocolate Shake <span class="price" style="margin-left: auto;"><i class="fa-solid fa-indian-rupee-sign"></i>90/-</span></li>
+<li style="display: flex; justify-content: space-between; align-items: center;">Strawberry Shake <span class="price" style="margin-left: auto;"><i class="fa-solid fa-indian-rupee-sign"></i>90/-</span></li>
+<li style="display: flex; justify-content: space-between; align-items: center;">Pista Shake <span class="price" style="margin-left: auto;"><i class="fa-solid fa-indian-rupee-sign"></i>90/-</span></li>
+<li style="display: flex; justify-content: space-between; align-items: center;">Butter Scotch Shake <span class="price" style="margin-left: auto;"><i class="fa-solid fa-indian-rupee-sign"></i>100/-</span></li>
+<li style="display: flex; justify-content: space-between; align-items: center;">Spanish Delight Shake <span class="price" style="margin-left: auto;"><i class="fa-solid fa-indian-rupee-sign"></i>100/-</span></li>
+</ul>
+<div class="one" style="padding: 50px 0 50px 0;"></div>
+<!-- ENERGY CROSS -->
+<h3 class="menu-category">Energy Cross</h3>
+<div class="one" style="padding: 50px 0 50px 0;"></div>
+<ul class="menu-list">
+<li style="display: flex; justify-content: space-between; align-items: center;">Dragon (SPL) <span class="price" style="margin-left: auto;"><i class="fa-solid fa-indian-rupee-sign"></i>180/-</span></li>
+<li style="display: flex; justify-content: space-between; align-items: center;">Boom (SPL) <span class="price" style="margin-left: auto;"><i class="fa-solid fa-indian-rupee-sign"></i>160/-</span></li>
+</ul>
+<div class="one" style="padding: 50px 0 50px 0;"></div>
+<!-- MOJITO -->
+<h3 class="menu-category">Mojito</h3>
+<div class="one" style="padding: 50px 0 50px 0;"></div>
+<ul class="menu-list">
+<li style="display: flex; justify-content: space-between; align-items: center;">Nellikka Kanthari <span class="price" style="margin-left: auto;"><i class="fa-solid fa-indian-rupee-sign"></i>70/-</span></li>
+<li style="display: flex; justify-content: space-between; align-items: center;">Green Mango Kanthari <span class="price" style="margin-left: auto;"><i class="fa-solid fa-indian-rupee-sign"></i>70/-</span></li>
+<li style="display: flex; justify-content: space-between; align-items: center;">Watermelon <span class="price" style="margin-left: auto;"><i class="fa-solid fa-indian-rupee-sign"></i>70/-</span></li>
+<li style="display: flex; justify-content: space-between; align-items: center;">Green Apple <span class="price" style="margin-left: auto;"><i class="fa-solid fa-indian-rupee-sign"></i>70/-</span></li>
+<li style="display: flex; justify-content: space-between; align-items: center;">Passion Fruit <span class="price" style="margin-left: auto;"><i class="fa-solid fa-indian-rupee-sign"></i>80/-</span></li>
+<li style="display: flex; justify-content: space-between; align-items: center;">Strawberry <span class="price" style="margin-left: auto;"><i class="fa-solid fa-indian-rupee-sign"></i>80/-</span></li>
+<li style="display: flex; justify-content: space-between; align-items: center;">Blue Sky <span class="price" style="margin-left: auto;"><i class="fa-solid fa-indian-rupee-sign"></i>80/-</span></li>
+<li style="display: flex; justify-content: space-between; align-items: center;">Lassi Like <span class="price" style="margin-left: auto;"><i class="fa-solid fa-indian-rupee-sign"></i>80/-</span></li>
+<li style="display: flex; justify-content: space-between; align-items: center;">Blue Berry <span class="price" style="margin-left: auto;"><i class="fa-solid fa-indian-rupee-sign"></i>80/-</span></li>
+<li style="display: flex; justify-content: space-between; align-items: center;">Pomegranate <span class="price" style="margin-left: auto;"><i class="fa-solid fa-indian-rupee-sign"></i>80/-</span></li>
+</ul>
+<div class="one" style="padding: 50px 0 50px 0;"></div>
+<!--avil milk-->
+<h3 class="menu-category">Avil Milk</h3>
+<div class="one" style="padding: 50px 0 50px 0;"></div>
+<ul class="menu-list">
+<li style="display: flex; justify-content: space-between; align-items: center;">Normal <span class="price" style="margin-left: auto;"><i class="fa-solid fa-indian-rupee-sign"></i>30/-</span></li>
+<li style="display: flex; justify-content: space-between; align-items: center;">Avil Milk (SPL) <span class="price" style="margin-left: auto;"><i class="fa-solid fa-indian-rupee-sign"></i>50/-</span></li>
+<li style="display: flex; justify-content: space-between; align-items: center;">Boost <span class="price" style="margin-left: auto;"><i class="fa-solid fa-indian-rupee-sign"></i>60/-</span></li>
+<li style="display: flex; justify-content: space-between; align-items: center;">Butter Scotch <span class="price" style="margin-left: auto;"><i class="fa-solid fa-indian-rupee-sign"></i>70/-</span></li>
+<li style="display: flex; justify-content: space-between; align-items: center;">Oreo <span class="price" style="margin-left: auto;"><i class="fa-solid fa-indian-rupee-sign"></i>70/-</span></li>
+<li style="display: flex; justify-content: space-between; align-items: center;">Chocolate <span class="price" style="margin-left: auto;"><i class="fa-solid fa-indian-rupee-sign"></i>70/-</span></li>
+<li style="display: flex; justify-content: space-between; align-items: center;">Black Curent <span class="price" style="margin-left: auto;"><i class="fa-solid fa-indian-rupee-sign"></i>80/-</span></li>
+<li style="display: flex; justify-content: space-between; align-items: center;">Ors Truity <span class="price" style="margin-left: auto;"><i class="fa-solid fa-indian-rupee-sign"></i>80/-</span></li>
+<li style="display: flex; justify-content: space-between; align-items: center;">Strawberry <span class="price" style="margin-left: auto;"><i class="fa-solid fa-indian-rupee-sign"></i>80/-</span></li>
+<li style="display: flex; justify-content: space-between; align-items: center;">Nutella <span class="price" style="margin-left: auto;"><i class="fa-solid fa-indian-rupee-sign"></i>80/-</span></li>
+<li style="display: flex; justify-content: space-between; align-items: center;">Royal Avil Milk <span class="price" style="margin-left: auto;"><i class="fa-solid fa-indian-rupee-sign"></i>80/-</span></li>
+<li style="display: flex; justify-content: space-between; align-items: center;">Fruits Avi Milk <span class="price" style="margin-left: auto;"><i class="fa-solid fa-indian-rupee-sign"></i>80/-</span></li>
+<li style="display: flex; justify-content: space-between; align-items: center;">Lassi Like (SPL) <span class="price" style="margin-left: auto;"><i class="fa-solid fa-indian-rupee-sign"></i>90/-</span></li>
+<li style="display: flex; justify-content: space-between; align-items: center;">Dry Fruits Avilmilk <span class="price" style="margin-left: auto;"><i class="fa-solid fa-indian-rupee-sign"></i>90/-</span></li>
+</ul>
+<div class="one" style="padding: 50px 0 50px 0;"></div>
+<!--moktail-->
+<h3 class="menu-category">Moktail</h3>
+<div class="one" style="padding: 50px 0 50px 0;"></div>
+<ul class="menu-list">
+<li style="display: flex; justify-content: space-between; align-items: center;">Strawberry Breeze <span class="price" style="margin-left: auto;"><i class="fa-solid fa-indian-rupee-sign"></i>100/-</span></li>
+<li style="display: flex; justify-content: space-between; align-items: center;">Purple Drizzle <span class="price" style="margin-left: auto;"><i class="fa-solid fa-indian-rupee-sign"></i>100/-</span></li>
+<li style="display: flex; justify-content: space-between; align-items: center;">Fizzle Citrus Blast <span class="price" style="margin-left: auto;"><i class="fa-solid fa-indian-rupee-sign"></i>100/-</span></li>
+<li style="display: flex; justify-content: space-between; align-items: center;">Purple Occean <span class="price" style="margin-left: auto;"><i class="fa-solid fa-indian-rupee-sign"></i>110/-</span></li>
+<li style="display: flex; justify-content: space-between; align-items: center;">Sunset Splash <span class="price" style="margin-left: auto;"><i class="fa-solid fa-indian-rupee-sign"></i>110/-</span></li>
+</ul>
+<div class="one" style="padding: 50px 0 50px 0;"></div>
+
+
+
+
+<!-- JUICE Section -->
+<h3 class="menu-category">Juice</h3>
+<div class="one" style="padding: 50px 0 50px 0;"></div>
+<ul class="menu-list">
+<li style="display: flex; justify-content: space-between; align-items: center;">Watermelon <span class="price" style="margin-left: auto;">50/-</span></li>
+<li style="display: flex; justify-content: space-between; align-items: center;">Pineapple <span class="price" style="margin-left: auto;">50/-</span></li>
+<li style="display: flex; justify-content: space-between; align-items: center;">Pappaya <span class="price" style="margin-left: auto;">50/-</span></li>
+<li style="display: flex; justify-content: space-between; align-items: center;">Grape <span class="price" style="margin-left: auto;">60/-</span></li>
+<li style="display: flex; justify-content: space-between; align-items: center;">Shamam <span class="price" style="margin-left: auto;">60/-</span></li>
+<li style="display: flex; justify-content: space-between; align-items: center;">Badam Milk <span class="price" style="margin-left: auto;">60/-</span></li>
+<li style="display: flex; justify-content: space-between; align-items: center;">Orange <span class="price" style="margin-left: auto;">60/-</span></li>
+<li style="display: flex; justify-content: space-between; align-items: center;">Mix <span class="price" style="margin-left: auto;">60/-</span></li>
+<li style="display: flex; justify-content: space-between; align-items: center;">Musambi <span class="price" style="margin-left: auto;">60/-</span></li>
+<li style="display: flex; justify-content: space-between; align-items: center;">Carrot <span class="price" style="margin-left: auto;">60/-</span></li>
+<li style="display: flex; justify-content: space-between; align-items: center;">Apple <span class="price" style="margin-left: auto;">60/-</span></li>
+<li style="display: flex; justify-content: space-between; align-items: center;">Anar <span class="price" style="margin-left: auto;">60/-</span></li>
+<li style="display: flex; justify-content: space-between; align-items: center;">Kiwi <span class="price" style="margin-left: auto;">60/-</span></li>
+<li style="display: flex; justify-content: space-between; align-items: center;">Orang Carrot Mix <span class="price" style="margin-left: auto;">70/-</span></li>
+<li style="display: flex; justify-content: space-between; align-items: center;">Saudi Juice <span class="price" style="margin-left: auto;">70/-</span></li>
+<li style="display: flex; justify-content: space-between; align-items: center;">Lassi Like (SPL) <span class="price" style="margin-left: auto;">80/-</span></li>
+<li style="display: flex; justify-content: space-between; align-items: center;">Mango Passion <span class="price" style="margin-left: auto;">80/-</span></li>
+<li style="display: flex; justify-content: space-between; align-items: center;">Pineapple Passion <span class="price" style="margin-left: auto;">80/-</span></li>
+</ul>
+<div class="one" style="padding: 50px 0 50px 0;"></div>
+
+<!-- Hot Items -->
+<h3 class="menu-category">Hot Items</h3>
+<div class="one" style="padding: 50px 0 50px 0;"></div>
+<ul class="menu-list">
+<li style="display: flex; justify-content: space-between; align-items: center;">Tea <span class="price" style="margin-left: auto;"><i class="fa-solid fa-indian-rupee-sign"></i>10/-</span></li>
+<li style="display: flex; justify-content: space-between; align-items: center;">Coffee <span class="price" style="margin-left: auto;"><i class="fa-solid fa-indian-rupee-sign"></i>15/-</span></li>
+<li style="display: flex; justify-content: space-between; align-items: center;">Black Tea <span class="price" style="margin-left: auto;"><i class="fa-solid fa-indian-rupee-sign"></i>10/-</span></li>
+<li style="display: flex; justify-content: space-between; align-items: center;">Black Coffee <span class="price" style="margin-left: auto;"><i class="fa-solid fa-indian-rupee-sign"></i>15/-</span></li>
+<li style="display: flex; justify-content: space-between; align-items: center;">Boost <span class="price" style="margin-left: auto;"><i class="fa-solid fa-indian-rupee-sign"></i>20/-</span></li>
+<li style="display: flex; justify-content: space-between; align-items: center;">Horlicks <span class="price" style="margin-left: auto;"><i class="fa-solid fa-indian-rupee-sign"></i>20/-</span></li>
+</ul>
+<div class="one" style="padding: 50px 0 50px 0;"></div>
+<!-- Ice Cream Scoop -->
+<h3 class="menu-category">Ice Cream Scoop</h3>
+<div class="one" style="padding: 50px 0 50px 0;"></div>
+<ul class="menu-list">
+<li style="display: flex; justify-content: space-between; align-items: center;">Vanilla <span class="price" style="margin-left: auto;"><i class="fa-solid fa-indian-rupee-sign"></i>30/-</span></li>
+<li style="display: flex; justify-content: space-between; align-items: center;">Strawberry <span class="price" style="margin-left: auto;"><i class="fa-solid fa-indian-rupee-sign"></i>30/-</span></li>
+<li style="display: flex; justify-content: space-between; align-items: center;">Chocolate <span class="price" style="margin-left: auto;"><i class="fa-solid fa-indian-rupee-sign"></i>30/-</span></li>
+<li style="display: flex; justify-content: space-between; align-items: center;">Mango <span class="price" style="margin-left: auto;"><i class="fa-solid fa-indian-rupee-sign"></i>30/-</span></li>
+<li style="display: flex; justify-content: space-between; align-items: center;">Chikku <span class="price" style="margin-left: auto;"><i class="fa-solid fa-indian-rupee-sign"></i>40/-</span></li>
+<li style="display: flex; justify-content: space-between; align-items: center;">Oreo <span class="price" style="margin-left: auto;"><i class="fa-solid fa-indian-rupee-sign"></i>50/-</span></li>
+<li style="display: flex; justify-content: space-between; align-items: center;">Vannila Nutty <span class="price" style="margin-left: auto;"><i class="fa-solid fa-indian-rupee-sign"></i>50/-</span></li>
+<li style="display: flex; justify-content: space-between; align-items: center;">Chocolate Chip <span class="price" style="margin-left: auto;"><i class="fa-solid fa-indian-rupee-sign"></i>50/-</span></li>
+<li style="display: flex; justify-content: space-between; align-items: center;">Chocolate Nutty <span class="price" style="margin-left: auto;"><i class="fa-solid fa-indian-rupee-sign"></i>50/-</span></li>
+<li style="display: flex; justify-content: space-between; align-items: center;">Butter Scotch <span class="price" style="margin-left: auto;"><i class="fa-solid fa-indian-rupee-sign"></i>50/-</span></li>
+<li style="display: flex; justify-content: space-between; align-items: center;">Black Current <span class="price" style="margin-left: auto;"><i class="fa-solid fa-indian-rupee-sign"></i>50/-</span></li>
+<li style="display: flex; justify-content: space-between; align-items: center;">Falooda <span class="price" style="margin-left: auto;"><i class="fa-solid fa-indian-rupee-sign"></i>80/-</span></li>
+</ul>
+<div class="one" style="padding: 50px 0 50px 0;"></div>
+
+
+<!--Freak Shake-->
+<h3 class="menu-category">Freak Shake</h3>
+<div class="one" style="padding: 50px 0 50px 0;"></div>
+<ul class="menu-list">
+<li style="display: flex; justify-content: space-between; align-items: center;">Black Forest <span class="price" style="margin-left: auto;"><i class="fa-solid fa-indian-rupee-sign"></i>110/-</span></li>
+<li style="display: flex; justify-content: space-between; align-items: center;">Wait Forest <span class="price" style="margin-left: auto;"><i class="fa-solid fa-indian-rupee-sign"></i>120/-</span></li>
+<li style="display: flex; justify-content: space-between; align-items: center;">Monster <span class="price" style="margin-left: auto;"><i class="fa-solid fa-indian-rupee-sign"></i>120/-</span></li>
+<li style="display: flex; justify-content: space-between; align-items: center;">Killer Monster <span class="price" style="margin-left: auto;"><i class="fa-solid fa-indian-rupee-sign"></i>150/-</span></li>
+</ul>
+<div class="one" style="padding: 50px 0 50px 0;"></div>
+<!--With Icecream-->
+<h3 class="menu-category">With Icecream</h3>
+<div class="one" style="padding: 50px 0 50px 0;"></div>
+<ul class="menu-list">
+<li style="display: flex; justify-content: space-between; align-items: center;">Fruits Salad <span class="price" style="margin-left: auto;"><i class="fa-solid fa-indian-rupee-sign"></i>70/-</span></li>
+<li style="display: flex; justify-content: space-between; align-items: center;">Brown With Icecream <span class="price" style="margin-left: auto;"><i class="fa-solid fa-indian-rupee-sign"></i>80/-</span></li>
+<li style="display: flex; justify-content: space-between; align-items: center;">Chocolate Fudge <span class="price" style="margin-left: auto;"><i class="fa-solid fa-indian-rupee-sign"></i>80/-</span></li>
+<li style="display: flex; justify-content: space-between; align-items: center;">Gudbud <span class="price" style="margin-left: auto;"><i class="fa-solid fa-indian-rupee-sign"></i>90/-</span></li>
+<li style="display: flex; justify-content: space-between; align-items: center;">Death By Chocolate <span class="price" style="margin-left: auto;"><i class="fa-solid fa-indian-rupee-sign"></i>100/-</span></li>
+<li style="display: flex; justify-content: space-between; align-items: center;">Hot Fudge <span class="price" style="margin-left: auto;"><i class="fa-solid fa-indian-rupee-sign"></i>120/-</span></li>
+</ul>
+<div class="one" style="padding: 50px 0 50px 0;"></div>
+<!--Protein-->
+<h3 class="menu-category">Proteins</h3>
+<div class="one" style="padding: 50px 0 50px 0;"></div>
+<ul class="menu-list">
+<li style="display: flex; justify-content: space-between; align-items: center;">Natural Protean <span class="price" style="margin-left: auto;"><i class="fa-solid fa-indian-rupee-sign"></i>90/-</span></li>
+<li style="display: flex; justify-content: space-between; align-items: center;">Whey Protein <span class="price" style="margin-left: auto;"><i class="fa-solid fa-indian-rupee-sign"></i>120/-</span></li>
+<li style="display: flex; justify-content: space-between; align-items: center;">High Protein <span class="price" style="margin-left: auto;"><i class="fa-solid fa-indian-rupee-sign"></i>120/-</span></li>
+</ul>
+<div class="one" style="padding: 50px 0 50px 0;"></div>
+<!--Falooda-->
+<h3 class="menu-category">Falooda</h3>
+<div class="one" style="padding: 50px 0 50px 0;"></div>
+<ul class="menu-list">
+<li style="display: flex; justify-content: space-between; align-items: center;">Normal Falooda <span class="price" style="margin-left: auto;"><i class="fa-solid fa-indian-rupee-sign"></i>100/-</span></li>
+<li style="display: flex; justify-content: space-between; align-items: center;">Kesari Falooda <span class="price" style="margin-left: auto;"><i class="fa-solid fa-indian-rupee-sign"></i>100/-</span></li>
+<li style="display: flex; justify-content: space-between; align-items: center;">Malabari Falooda <span class="price" style="margin-left: auto;"><i class="fa-solid fa-indian-rupee-sign"></i>130/-</span></li>
+<li style="display: flex; justify-content: space-between; align-items: center;">Strawberry Falooda <span class="price" style="margin-left: auto;"><i class="fa-solid fa-indian-rupee-sign"></i>130/-</span></li>
+<li style="display: flex; justify-content: space-between; align-items: center;">Kashmeeri Falooda <span class="price" style="margin-left: auto;"><i class="fa-solid fa-indian-rupee-sign"></i>130/-</span></li>
+<li style="display: flex; justify-content: space-between; align-items: center;">Pista Falooda <span class="price" style="margin-left: auto;"><i class="fa-solid fa-indian-rupee-sign"></i>130/-</span></li>
+<li style="display: flex; justify-content: space-between; align-items: center;">Lassi Like Sp. <span class="price" style="margin-left: auto;"><i class="fa-solid fa-indian-rupee-sign"></i>150/-</span></li>
+<li style="display: flex; justify-content: space-between; align-items: center;">Dry Fruit Falooda <span class="price" style="margin-left: auto;"><i class="fa-solid fa-indian-rupee-sign"></i>150/-</span></li>
+<li style="display: flex; justify-content: space-between; align-items: center;">Chocolate Falooda <span class="price" style="margin-left: auto;"><i class="fa-solid fa-indian-rupee-sign"></i>150/-</span></li>
+<li style="display: flex; justify-content: space-between; align-items: center;">Royal Falooda <span class="price" style="margin-left: auto;"><i class="fa-solid fa-indian-rupee-sign"></i>150/-</span></li>
+</ul>
+<div class="one" style="padding: 50px 0 50px 0;"></div>
+<!--Cold Coffee-->
+<h3 class="menu-category">Cold Coffee</h3>
+<div class="one" style="padding: 50px 0 50px 0;"></div>
+<ul class="menu-list">
+<li style="display: flex; justify-content: space-between; align-items: center;">Hard Rock Coffee <span class="price" style="margin-left: auto;"><i class="fa-solid fa-indian-rupee-sign"></i>70/-</span></li>
+<li style="display: flex; justify-content: space-between; align-items: center;">Strawberry Coffee <span class="price" style="margin-left: auto;"><i class="fa-solid fa-indian-rupee-sign"></i>70/-</span></li>
+<li style="display: flex; justify-content: space-between; align-items: center;">Chocolate Coffee <span class="price" style="margin-left: auto;"><i class="fa-solid fa-indian-rupee-sign"></i>70/-</span></li>
+<li style="display: flex; justify-content: space-between; align-items: center;">Caramel Coffee <span class="price" style="margin-left: auto;"><i class="fa-solid fa-indian-rupee-sign"></i>70/-</span></li>
+<li style="display: flex; justify-content: space-between; align-items: center;">Ferrero Coffee <span class="price" style="margin-left: auto;"><i class="fa-solid fa-indian-rupee-sign"></i>80/-</span></li>
+</ul>
+<div class="one" style="padding: 50px 0 50px 0;"></div>
+<!-- LIME Section -->
+<h3 class="menu-category">Lime</h3>
+<div class="one" style="padding: 50px 0 50px 0;"></div>
+<ul class="menu-list">
+<li style="display: flex; justify-content: space-between; align-items: center;">Fresh Lime <span class="price" style="margin-left: auto;">20/-</span></li>
+<li style="display: flex; justify-content: space-between; align-items: center;">Orang Lime <span class="price" style="margin-left: auto;">30/-</span></li>
+<li style="display: flex; justify-content: space-between; align-items: center;">Pineapple Lime <span class="price" style="margin-left: auto;">30/-</span></li>
+<li style="display: flex; justify-content: space-between; align-items: center;">Mango Lime <span class="price" style="margin-left: auto;">30/-</span></li>
+<li style="display: flex; justify-content: space-between; align-items: center;">Ginger Lime <span class="price" style="margin-left: auto;">30/-</span></li>
+<li style="display: flex; justify-content: space-between; align-items: center;">Grape Lime <span class="price" style="margin-left: auto;">30/-</span></li>
+<li style="display: flex; justify-content: space-between; align-items: center;">Red Lime <span class="price" style="margin-left: auto;">30/-</span></li>
+<li style="display: flex; justify-content: space-between; align-items: center;">Mint Lime <span class="price" style="margin-left: auto;">30/-</span></li>
+<li style="display: flex; justify-content: space-between; align-items: center;">Masala Lime <span class="price" style="margin-left: auto;">30/-</span></li>
+<li style="display: flex; justify-content: space-between; align-items: center;">Green Apple <span class="price" style="margin-left: auto;">30/-</span></li>
+<li style="display: flex; justify-content: space-between; align-items: center;">Strawberry Lime <span class="price" style="margin-left: auto;">40/-</span></li>
+<li style="display: flex; justify-content: space-between; align-items: center;">Kiwi Lime <span class="price" style="margin-left: auto;">40/-</span></li>
+<li style="display: flex; justify-content: space-between; align-items: center;">Apple Lime <span class="price" style="margin-left: auto;">40/-</span></li>
+<li style="display: flex; justify-content: space-between; align-items: center;">Blue Lime <span class="price" style="margin-left: auto;">40/-</span></li>
+<li style="display: flex; justify-content: space-between; align-items: center;">Green Lime <span class="price" style="margin-left: auto;">40/-</span></li>
+<li style="display: flex; justify-content: space-between; align-items: center;">Magic Lime <span class="price" style="margin-left: auto;">50/-</span></li>
+<li style="display: flex; justify-content: space-between; align-items: center;">Energy Lime <span class="price" style="margin-left: auto;">50/-</span></li>
+
+</ul>
+<div class="one" style="padding: 50px 0 50px 0;"></div>
+</div>
+
+
+
+
+<!-- JUICE Section -->
+  
+
+
+
+
+
+</section>
+<div class="footer pb-3" id="about">
+      <div class="footer-flex">
+        <div class="footer-brand">
+          <div>
+            <img
+            src="assets/images/logo/lassi logo white.png"
+            alt="Lassi Like Logo"
+            style="
+              height: 80px;
+              width: 80px;
+              object-fit: contain;
+              display: inline-block;
+              margin-top: 2px;
+            "
+          />
+          </div>
+          <section style="line-height: 1.45rem; margin-top: 10px">
+            <p>
+             welcome to Lassi Like! We are passionate
+              about serving you the finest bakery delights, from freshly baked
+              pastries to savory treats. Our commitment to quality and customer
+              satisfaction is unwavering. Whether you're craving a sweet treat
+              or a savory snack, we have something for everyone. Thank you for
+              choosing Lassi Like, where every bite is a moment of joy!
+            </p>
+
+          </section>
+        </div>
+
+        <div class="flex-space-between" style="flex-wrap: wrap">
+          <div class="social-media">
+            <section>
+              <h3>Social Media</h3>
+              <span
+                ><a href="https://www.facebook.com/people/Lassilike-Alanallur/pfbid0YJHLRd5HkPQ3MNCKfoQojKiavMFWT6sTEDuTPveRwA2M9XBVByjtgkAPzYZCV5Lal/"
+                  ><i class="fab fa-facebook-square"></i>&ensp;Facebook</a
+                ></span
+              >
+              <span
+                ><a href="https://www.instagram.com/lassi_like_alanallur/">
+                  <i class="fab fa-instagram"></i>&ensp;Instagram</a
+                ></span
+              >
+              
+              
+            </section>
+          </div>
+
+          <div class="contact">
+            <section>
+              <h3>Contact Us</h3>
+              <span
+                ><a href="https://wa.me/917034914444"
+                  ><i class="fab fa-whatsapp"></i>&ensp;+91 7034914444</a
+                ></span>
+                <span>
+  <a href="tel:+917034914444">
+    <i class="fa-solid fa-phone"></i>&ensp;+91 7034914444
+  </a>
+</span>
+<span>
+  <a href="tel:+919605841744">
+    <i class="fa-solid fa-phone"></i>&ensp;+91 9605841744  </a>
+</span>
+<span>
+  <a href="tel:+919986190363">
+    <i class="fa-solid fa-phone"></i>&ensp;+91 9986190363
+  </a>
+</span>
+
+              
+              <span>
+                <a href="mailto:lessilikelessilike@gmail.com"
+                  ><i class="fa-regular fa-envelope"></i
+                  >&ensp;lessilikelessilike@gmail.com</a
+                ></span
+              >
+            </section>
+          </div>
+
+          
+
+          <div class="outlet">
+            <section>
+              <h3>Store Locations</h3>
+              <span
+                ><a href="https://share.google/9xHjmpAhsXgX5LDVb"><i class="fas fa-map-marker-alt"></i>&ensp;Cresent Plaza, Chanthappadi , Alanallur Palakkad, kerala</a></span
+              >
+              
+             
+            </section>
+          </div>
+        </div>
+      </div>
+      <div
+        class="text-center copyright"
+        style="color: #edf2f7; margin-top: 4rem"
+      >
+        <p style="font-size: small"> © 2025 Lassi Lake Co. 🥤 | All Rights Reserved | Made with ❤️ & Lassi</p>
+      </div>
+    </div>
+<script src="assets/js/mixitup.min.js"></script>
+<script>
+      var mixer = mixitup(".consts");
+    </script>
+<script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+<script src="assets/js/main.js"></script>
+<script>
+      function setActive(element) {
+        const links = document.querySelectorAll(".link-menu");
+        links.forEach((link) => link.classList.remove("active"));
+        element.classList.add("active");
+      }
+
+      function getGreeting() {
+        const hour = new Date().getHours();
+        if (hour >= 4 && hour < 12) {
+          return "selamat pagi";
+        } else if (hour >= 12 && hour < 15) {
+          return "selamat siang";
+        } else if (hour >= 15 && hour < 18) {
+          return "selamat sore";
+        } else {
+          return "selamat malam";
+        }
+      }
+
+      function sendWhatsAppMessage(button) {
+        const productName = button
+          .closest(".shop1")
+          .querySelector("h2").innerText;
+        const greeting = getGreeting();
+        const message = `Halo ${greeting}, I would like to order *${productName}*.`;
+  const phoneNumber = "918848641974";
+        const whatsappURL = `https://wa.me/${phoneNumber}?text=${encodeURIComponent(
+          message
+        )}`;
+        window.open(whatsappURL, "_blank");
+      }
+
+      function scrollToSection(event, sectionId, element) {
+        event.preventDefault();
+
+        const links = document.querySelectorAll("a");
+        links.forEach((link) => link.classList.remove("active"));
+
+        const activeLink = document.getElementById(element);
+        if (activeLink) {
+          activeLink.classList.add("active");
+        }
+
+        const targetElement = document.getElementById(sectionId);
+        const offset = -80;
+        const elementPosition =
+          targetElement.getBoundingClientRect().top + window.pageYOffset;
+        const offsetPosition = elementPosition + offset;
+        window.scrollTo({
+          top: offsetPosition,
+          behavior: "smooth",
+        });
+      }
+    </script>
+    <!-- WhatsApp Chat Widget -->
+<div id="whatsapp-chat-widget">
+    <div class="wa-widget-send-button">
+    <!-- WhatsApp Logo inside green circle -->
+    <div class="wa-widget-send-button">
+    <svg id="wa-widget-svg" width="28" height="28" viewBox="0 0 28 28" fill="none" xmlns="http://www.w3.org/2000/svg" style="pointer-events: none; width: auto; height: auto; stroke: none; fill: none; display: block;">
+          <g clip-path="url(#clip0_1029_374)">
+              <path fill-rule="evenodd" clip-rule="evenodd" d="M23.7881 4.06584C21.1709 1.44525 17.69 0.00132957 13.9811 0C6.33875 0 0.118997 6.21909 0.116338 13.8635C0.115008 16.3072 0.75387 18.6925 1.96711 20.7946L0 27.9796L7.34989 26.0517C9.37482 27.1566 11.655 27.7383 13.9752 27.739H13.9811C21.6222 27.739 27.8427 21.5192 27.8453 13.8748C27.8466 10.17 26.406 6.6871 23.7881 4.06651V4.06584ZM13.9811 25.3975H13.9765C11.909 25.3969 9.88075 24.8411 8.1111 23.7914L7.69027 23.5415L3.3286 24.6856L4.49264 20.4329L4.21874 19.9968C3.06533 18.162 2.45572 16.0413 2.45705 13.8642C2.45971 7.51078 7.6291 2.34138 13.9858 2.34138C17.0638 2.34271 19.957 3.54266 22.1328 5.72117C24.3086 7.89902 25.5059 10.7949 25.5046 13.8735C25.5019 20.2275 20.3326 25.3969 13.9811 25.3969V25.3975ZM20.3019 16.7673C19.9556 16.5938 18.2524 15.7561 17.9346 15.6405C17.6169 15.5248 17.3862 15.467 17.1555 15.814C16.9248 16.161 16.2607 16.9415 16.0586 17.1721C15.8565 17.4035 15.6544 17.4321 15.308 17.2585C14.9617 17.085 13.8455 16.7194 12.522 15.5394C11.4922 14.6206 10.7968 13.4866 10.5948 13.1395C10.3926 12.7925 10.5735 12.605 10.7463 12.4329C10.9018 12.2773 11.0926 12.028 11.2661 11.8259C11.4397 11.6238 11.4969 11.4789 11.6125 11.2482C11.7282 11.0168 11.6704 10.8148 11.584 10.6412C11.4975 10.4677 10.8048 8.76253 10.5156 8.06918C10.2344 7.39377 9.94858 7.48551 9.7365 7.47421C9.53439 7.46424 9.30373 7.46225 9.07239 7.46225C8.84104 7.46225 8.46605 7.54867 8.14831 7.89569C7.83056 8.24267 6.93573 9.08097 6.93573 10.7855C6.93573 12.49 8.17693 14.1381 8.35042 14.3694C8.52391 14.6008 10.7935 18.0995 14.2683 19.6006C15.0947 19.9576 15.7402 20.171 16.2434 20.3306C17.0731 20.5945 17.8283 20.5573 18.4252 20.4682C19.0907 20.3685 20.4748 19.6299 20.7633 18.8208C21.0518 18.0117 21.0518 17.3177 20.9654 17.1734C20.879 17.0292 20.6477 16.9421 20.3013 16.7686L20.3019 16.7673Z" fill="white"></path>
+          </g>
+          <defs>
+              <clipPath id="clip0_1029_374">
+                  <rect width="27.8453" height="28" fill="white"></rect>
+              </clipPath>
+          </defs>
+      </svg>
+</div>
+
+</div>
+
+
+    <div class="wa-chat-bubble">Chat with us</div>
+
+    <div class="wa-chat-box">
+        <div class="wa-chat-box-header">
+            <img class="wa-chat-box-brand" src="assets/images/logo/lassi logo white.png" alt="Lassi Like">
+            <span class="wa-chat-box-close">✕</span>
+        </div>
+        <div class="wa-chat-box-content-chat-welcome">🍰 How can we help you today?</div>
+        <a href="https://api.whatsapp.com/send?phone=917034914444" target="_blank" class="wa-chat-box-content-send-btn">
+            Start Chat
+        </a>
+        <div class="wa-chat-box-poweredby">
+            Powered by <a href="https://www.wati.io/" target="_blank">wati.io</a>
+        </div>
+    </div>
+</div>
+<script>
+const sendBtn = document.querySelector('.wa-widget-send-button');
+const chatBubble = document.querySelector('.wa-chat-bubble');
+const chatBox = document.querySelector('.wa-chat-box');
+const chatClose = document.querySelector('.wa-chat-box-close');
+
+// Step 1: Click send button → show chat bubble
+sendBtn.addEventListener('click', () => {
+    chatBubble.style.display = 'block';
+    sendBtn.style.display = 'none';
+});
+
+// Step 2: Click chat bubble → show chat box
+chatBubble.addEventListener('click', () => {
+    chatBox.style.display = 'flex';
+    chatBubble.style.display = 'none';
+});
+
+// Step 3: Click close button → hide chat box, show send button again
+chatClose.addEventListener('click', () => {
+    chatBox.style.display = 'none';
+    sendBtn.style.display = 'flex';
+});
+</script>
+</body>
+</html>

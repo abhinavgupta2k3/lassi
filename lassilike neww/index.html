@@ -1,0 +1,1649 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0, maximum-scale=1.0"
+    />
+    <meta name="theme-color" content="#000" />
+    <meta name="msapplication-navbutton-color" content="#000" />
+    <meta content="yes" name="apple-mobile-web-app-capable" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="#000" />
+    <meta
+      name="description"
+      content="Discover fresh, handcrafted breads at Lassi Like. Enjoy a variety of delicious options baked daily."
+    />
+    <meta
+      name="keywords"
+      content="bakery, fresh bread, pastries, croissants, sweet bread"
+    />
+    <meta name="author" content="Lassi Like" />
+    <link
+      rel="shortcut icon"
+      href="assets/images/lassi gallery/lassi-removebg-preview (1).png"
+      type="image/x-icon"
+    />
+    <title>
+      LassiLike - Discover fresh, handcrafted breads at LassiLike. Enjoy a
+      variety of delicious options baked daily.
+    </title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400..700;1,400..700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="assets/css/main.css" />
+  </head>
+  <body>
+    <header>
+      <div class="header-content">
+        <div class="logo img">
+          <div class="logo" onclick="window.location.href='index.html'">
+      <img src="assets/images/logo/Adobe Express - file.png" alt="Lassi Like Logo" />
+    </div>
+        </div>
+        <nav class="navigation">
+          <h3 class="pb-2 brand d-none" onclick="window.location.href=''">
+            <i class="fa-solid fa-burger fa-bounce" style="color: #c7a17a"></i
+            >&nbsp;Lassi like
+          </h3>
+          <li>
+            <a
+              class="active"
+              href="#"
+              id="home-nav"
+              onclick="scrollToSection(event, 'home', 'home-nav')"
+              ><i class="fa-solid fa-house"></i>&ensp;Home</a
+            >
+          </li>
+          <li>
+            <a
+              href="#"
+              id="product-nav"
+              onclick="scrollToSection(event, 'products', 'product-nav')"
+              ><i class="fa-solid fa-bread-slice"></i>&ensp;Product List</a
+            >
+          </li>
+          <li>
+            <a
+              href="#"
+              id="service-nav"
+              onclick="scrollToSection(event, 'faq', 'service-nav')"
+              ><i class="fa-solid fa-user-gear"></i>&ensp;Services</a
+            >
+          </li>
+          
+          <li>
+            <a
+              href="/menunew_aligned.html"
+              id="Menu"
+              
+              ><i class="fa-solid fa-users"></i>&ensp;Menu</a
+            >
+          </li>
+          <li>
+            <a
+              href="#"
+              id="about-us"
+              onclick="scrollToSection(event, 'about', 'about-us')"
+              ><i class="fa-solid fa-users"></i>&ensp;About Us</a
+            >
+          </li>
+        </nav>
+        <div class="bars">
+          <img
+            src="/assets/images/others/menu.png"
+            alt="hamburger-menu"
+            class="bar"
+          />
+        </div>
+      </div>
+    </header>
+    <section class="home-section">
+  <div class="hero-slider">
+    <div class="slide active">
+      <img src="assets/images/lassi gallery/lassi bulding fb.jpg" alt="Restaurant Interior">
+    </div>
+    <div class="slide">
+      <img src="https://images.unsplash.com/photo-1414235077428-338989a2e8c0?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80" alt="Delicious Food">
+    </div>
+   
+    <div class="slide">
+      <img src="https://images.unsplash.com/photo-1551218808-94e220e084d2?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2074&q=80" alt="Restaurant Atmosphere">
+    </div>
+  </div>
+  
+  <div class="home-content">
+    <h1>Welcome to  <br> Lassi Like</h1>
+    <p>Experience the finest dining with our exceptional cuisine and warm atmosphere.</p>
+    <div class="home-links">
+      <div class="first">
+        <a href="menunew_aligned.html">View Menu</a>
+      </div>
+      <div class="second">
+        <a href="#about">Learn More</a>
+      </div>
+    </div>
+  </div>
+  
+  <div class="slider-dots">
+    <span class="dot active" data-slide="0"></span>
+    <span class="dot" data-slide="1"></span>
+    <span class="dot" data-slide="2"></span>
+    
+  </div>
+</section>
+    <div class="bg-shop" id="products">
+      <div class="shop-links">
+        <div><h2>Product List</h2></div>
+        <div class="links">
+          <li
+            class="active link-menu"
+            onclick="setActive(this)"
+            data-filter="all"
+          >
+           
+          </li>
+          <li
+            class="link-menu"
+            data-filter=".roti-bagel"
+            onclick="setActive(this)"
+          >
+          
+          </li>
+          <li
+            class="link-menu"
+            data-filter=".sandwich"
+            onclick="setActive(this)"
+          >
+            
+          </li>
+          <li
+            class="link-menu"
+            data-filter=".focaccia"
+            onclick="setActive(this)"
+          >
+           
+          </li>
+        </div>
+      </div>
+      
+      <!-- NEW WRAPPER DIV ADDED -->
+      <div class="product-container collapsed" id="productContainer">
+        <div class="shop-flex consts">
+          <div class="shop1 mix sandwich">
+            <div class="shop-image">
+              <img src="assets/images/headersection/burger.png" alt="Roti Sandwich" />
+            </div>
+            <h2>Burgers</h2>
+            <div class="d-flex justify-content-between">
+              <article> Starting From 69</article>
+              <div
+                class="d-flex mb-3 align-items-center gap-1 justify-content-center"
+              >
+                <div class="stars mb-0 d-flex align-items-center gap-1">
+                  <i class="fas fa-star gold"></i>
+                  <i class="fas fa-star gold"></i>
+                  <i class="fas fa-star gold"></i>
+                  <i class="fas fa-star gold"></i>
+                  <i class="fas fa-star gold"></i>
+                </div>
+                <div style="font-size: 12px">(283)</div>
+              </div>
+            </div>
+            <button
+              type="button"
+              class="btn btn-custom w-100"
+              onclick="sendWhatsAppMessage(this)"
+            >
+              <i class="fa-solid fa-cart-shopping"></i>&ensp;Buy Now
+            </button>
+          </div>
+          <div class="shop1 mix sandwich">
+            <div class="shop-image">
+              <img src="assets/images/headersection/sandwich.png" alt="Roti Sandwich" />
+            </div>
+            <h2>Combo Sandwiches</h2>
+            <div class="d-flex justify-content-between">
+              <article>Starting From 119</article>
+              <div
+                class="d-flex mb-3 align-items-center gap-1 justify-content-center"
+              >
+                <div class="stars mb-0 d-flex align-items-center gap-1">
+                  <i class="fas fa-star gold"></i>
+                  <i class="fas fa-star gold"></i>
+                  <i class="fas fa-star gold"></i>
+                  <i class="fas fa-star gold"></i>
+                  <i class="fas fa-star gold"></i>
+                </div>
+                <div style="font-size: 12px">(283)</div>
+              </div>
+            </div>
+            <button
+              type="button"
+              class="btn btn-custom w-100"
+              onclick="sendWhatsAppMessage(this)"
+            >
+              <i class="fa-solid fa-cart-shopping"></i>&ensp;Buy Now
+            </button>
+          </div>
+          <div class="shop1 mix sandwich">
+            <div class="shop-image">
+              <img src="assets/images/headersection/shawarma-removebg-preview.png" alt="Shawarma" />
+            </div>
+            <h2>Shawarma</h2>
+            <div class="d-flex justify-content-between">
+              <article>Starting From 79</article>
+              <div
+                class="d-flex mb-3 align-items-center gap-1 justify-content-center"
+              >
+                <div class="stars mb-0 d-flex align-items-center gap-1">
+                  <i class="fas fa-star gold"></i>
+                  <i class="fas fa-star gold"></i>
+                  <i class="fas fa-star gold"></i>
+                  <i class="fas fa-star gold"></i>
+                  <i class="fas fa-star gold"></i>
+                </div>
+                <div style="font-size: 12px">(283)</div>
+              </div>
+            </div>
+            <button
+              type="button"
+              class="btn btn-custom w-100"
+              onclick="sendWhatsAppMessage(this)"
+            >
+              <i class="fa-solid fa-cart-shopping"></i>&ensp;Buy Now
+            </button>
+          </div>
+          <div class="shop1 mix sandwich">
+            <div class="shop-image">
+              <img src="assets/images/products/wrap sandwitch.png" alt="wrapSandwich" />
+            </div>
+            <h2>wrap sandwich</h2>
+            <div class="d-flex justify-content-between">
+              <article>Starting From 79</article>
+              <div
+                class="d-flex mb-3 align-items-center gap-1 justify-content-center"
+              >
+                <div class="stars mb-0 d-flex align-items-center gap-1">
+                  <i class="fas fa-star gold"></i>
+                  <i class="fas fa-star gold"></i>
+                  <i class="fas fa-star gold"></i>
+                  <i class="fas fa-star gold"></i>
+                  <i class="fas fa-star gold"></i>
+                </div>
+                <div style="font-size: 12px">(283)</div>
+              </div>
+            </div>
+            <button
+              type="button"
+              class="btn btn-custom w-100"
+              onclick="sendWhatsAppMessage(this)"
+            >
+              <i class="fa-solid fa-cart-shopping"></i>&ensp;Buy Now
+            </button>
+          </div>
+        
+          <div class="shop1 mix sandwich">
+            <div class="shop-image">
+              <img src="assets/images/headersection/tikka-removebg-preview.png" alt="Roti Sandwich" />
+            </div>
+            <h2>Grill items</h2>
+            <div class="d-flex justify-content-between">
+              <article>Starting From 109</article>
+              <div
+                class="d-flex mb-3 align-items-center gap-1 justify-content-center"
+              >
+                <div class="stars mb-0 d-flex align-items-center gap-1">
+                  <i class="fas fa-star gold"></i>
+                  <i class="fas fa-star gold"></i>
+                  <i class="fas fa-star gold"></i>
+                  <i class="fas fa-star gold"></i>
+                  <i class="fas fa-star gold"></i>
+                </div>
+                <div style="font-size: 12px">(283)</div>
+              </div>
+            </div>
+            <button
+              type="button"
+              class="btn btn-custom w-100"
+              onclick="sendWhatsAppMessage(this)"
+            >
+              <i class="fa-solid fa-cart-shopping"></i>&ensp;Buy Now
+            </button>
+          </div>
+          <div class="shop1 mix sandwich">
+            <div class="shop-image">
+              <img src="assets/images/headersection/salad-removebg-preview.png" alt="Roti Sandwich" />
+            </div>
+            <h2>salad</h2>
+            <div class="d-flex justify-content-between">
+              <article>Starting From 89</article>
+              <div
+                class="d-flex mb-3 align-items-center gap-1 justify-content-center"
+              >
+                <div class="stars mb-0 d-flex align-items-center gap-1">
+                  <i class="fas fa-star gold"></i>
+                  <i class="fas fa-star gold"></i>
+                  <i class="fas fa-star gold"></i>
+                  <i class="fas fa-star gold"></i>
+                  <i class="fas fa-star gold"></i>
+                </div>
+                <div style="font-size: 12px">(283)</div>
+              </div>
+            </div>
+            <button
+              type="button"
+              class="btn btn-custom w-100"
+              onclick="sendWhatsAppMessage(this)"
+            >
+              <i class="fa-solid fa-cart-shopping"></i>&ensp;Buy Now
+            </button>
+          </div>
+          <div class="shop1 mix sandwich">
+            <div class="shop-image">
+              <img src="assets/images/headersection/pasta-removebg-preview.png" alt="Roti Sandwich" />
+            </div>
+            <h2>pasta</h2>
+            <div class="d-flex justify-content-between">
+              <article>Starting From 179</article>
+              <div
+                class="d-flex mb-3 align-items-center gap-1 justify-content-center"
+              >
+                <div class="stars mb-0 d-flex align-items-center gap-1">
+                  <i class="fas fa-star gold"></i>
+                  <i class="fas fa-star gold"></i>
+                  <i class="fas fa-star gold"></i>
+                  <i class="fas fa-star gold"></i>
+                  <i class="fas fa-star gold"></i>
+                </div>
+                <div style="font-size: 12px">(283)</div>
+              </div>
+            </div>
+            <button
+              type="button"
+              class="btn btn-custom w-100"
+              onclick="sendWhatsAppMessage(this)"
+            >
+              <i class="fa-solid fa-cart-shopping"></i>&ensp;Buy Now
+            </button>
+          </div>
+          <div class="shop1 mix sandwich">
+            <div class="shop-image">
+              <img src="assets/images/headersection/noodles-removebg-preview.png" alt="Roti Sandwich" />
+            </div>
+            <h2>Noodles</h2>
+            <div class="d-flex justify-content-between">
+              <article>Starting From 139</article>
+              <div
+                class="d-flex mb-3 align-items-center gap-1 justify-content-center"
+              >
+                <div class="stars mb-0 d-flex align-items-center gap-1">
+                  <i class="fas fa-star gold"></i>
+                  <i class="fas fa-star gold"></i>
+                  <i class="fas fa-star gold"></i>
+                  
+                  <i class="fas fa-star gold"></i>
+                </div>
+                <div style="font-size: 12px">(283)</div>
+              </div>
+            </div>
+            <button
+              type="button"
+              class="btn btn-custom w-100"
+              onclick="sendWhatsAppMessage(this)"
+            >
+              <i class="fa-solid fa-cart-shopping"></i>&ensp;Buy Now
+            </button>
+          </div>
+          <div class="shop1 mix sandwich">
+            <div class="shop-image">
+              <img src="assets/images/headersection/grilledrice-removebg-preview.png" alt="Roti Sandwich" />
+            </div>
+            <h2>grilled with rice</h2>
+            <div class="d-flex justify-content-between">
+              <article>starting from 175</article>
+              <div
+                class="d-flex mb-3 align-items-center gap-1 justify-content-center"
+              >
+                <div class="stars mb-0 d-flex align-items-center gap-1">
+                  <i class="fas fa-star gold"></i>
+                  <i class="fas fa-star gold"></i>
+                  <i class="fas fa-star gold"></i>
+                  <i class="fas fa-star gold"></i>
+                  <i class="fas fa-star gold"></i>
+                </div>
+                <div style="font-size: 12px">(999+)</div>
+              </div>
+            </div>
+            <button
+              type="button"
+              class="btn btn-custom w-100"
+              onclick="sendWhatsAppMessage(this)"
+            >
+              <i class="fa-solid fa-cart-shopping"></i>&ensp;Buy Now
+            </button>
+          </div>
+          <div class="shop1 mix sandwich">
+            <div class="shop-image">
+              <img
+                src="assets/images/products/brownie_milkshake_01-removebg-preview.png"
+                alt="Roti Sandwich"
+              />
+            </div>
+            <h2>Shakes</h2>
+            <div class="d-flex justify-content-between">
+              <article>starting from 59</article>
+              <div
+                class="d-flex mb-3 align-items-center gap-1 justify-content-center"
+              >
+                <div class="stars mb-0 d-flex align-items-center gap-1">
+                  <i class="fas fa-star gold"></i>
+                  <i class="fas fa-star gold"></i>
+                  <i class="fas fa-star gold"></i>
+                  <i class="fas fa-star gold"></i>
+                  <i class="fas fa-star gold"></i>
+                </div>
+                <div style="font-size: 12px">(452)</div>
+              </div>
+            </div>
+            <button
+              type="button"
+              class="btn btn-custom w-100"
+              onclick="sendWhatsAppMessage(this)"
+            >
+              <i class="fa-solid fa-cart-shopping"></i>&ensp;Buy Now
+            </button>
+          </div>
+          <div class="shop1 mix sandwich">
+            <div class="shop-image">
+              <img src="assets/images/headersection/lassi-removebg-preview.png" alt="Roti Sandwich" />
+            </div>
+            <h2>Lassi</h2>
+            <div class="d-flex justify-content-between">
+              <article>starting from 39</article>
+              <div
+                class="d-flex mb-3 align-items-center gap-1 justify-content-center"
+              >
+                <div class="stars mb-0 d-flex align-items-center gap-1">
+                  <i class="fas fa-star gold"></i>
+                  <i class="fas fa-star gold"></i>
+                  <i class="fas fa-star gold"></i>
+                  <i class="fas fa-star gold"></i>
+                  <i class="fas fa-star gold"></i>
+                </div>
+                <div style="font-size: 12px">(459)</div>
+              </div>
+            </div>
+            <button
+              type="button"
+              class="btn btn-custom w-100"
+              onclick="sendWhatsAppMessage(this)"
+            >
+              <i class="fa-solid fa-cart-shopping"></i>&ensp;Buy Now
+            </button>
+          </div>
+          <div class="shop1 mix roti-bagel">
+            <div class="shop-image">
+              <img
+                src="assets/images/headersection/splshake-removebg-preview.png"
+                alt="Roti Bagel"
+              />
+            </div>
+            <h2>special shake</h2>
+            <div class="d-flex justify-content-between">
+              <article>starting from 89</article>
+              <div
+                class="d-flex mb-3 align-items-center gap-1 justify-content-center"
+              >
+                <div class="stars mb-0 d-flex align-items-center gap-1">
+                  <i class="fas fa-star gold"></i>
+                  <i class="fas fa-star gold"></i>
+                  <i class="fas fa-star gold"></i>
+                  <i class="fas fa-star gold"></i>
+                  <i class="fas fa-star gold"></i>
+                </div>
+                <div style="font-size: 12px">(999+)</div>
+              </div>
+            </div>
+            <button
+              type="button"
+              class="btn btn-custom w-100"
+              onclick="sendWhatsAppMessage(this)"
+            >
+              <i class="fa-solid fa-cart-shopping"></i>&ensp;Buy Now
+            </button>
+          </div>
+          <div class="shop1 mix roti-bagel">
+            <div class="shop-image">
+              <img
+                src="/assets/images/products/ice-removebg-preview.png"
+                alt=" ice cream shake img"
+              />
+            </div>
+            <h2>ice cream shake</h2>
+            <div class="d-flex justify-content-between">
+              <article>starting from 89</article>
+              <div
+                class="d-flex mb-3 align-items-center gap-1 justify-content-center"
+              >
+                <div class="stars mb-0 d-flex align-items-center gap-1">
+                  <i class="fas fa-star gold"></i>
+                  <i class="fas fa-star gold"></i>
+                  <i class="fas fa-star gold"></i>
+                  <i class="fas fa-star gold"></i>
+                  <i class="fas fa-star gold"></i>
+                </div>
+                <div style="font-size: 12px">(879)</div>
+              </div>
+            </div>
+            <button
+              type="button"
+              class="btn btn-custom w-100"
+              onclick="sendWhatsAppMessage(this)"
+            >
+              <i class="fa-solid fa-cart-shopping"></i>&ensp;Buy Now
+            </button>
+          </div>
+          <div class="shop1 mix roti-bagel">
+            <div class="shop-image">
+              <img src="assets/images/headersection/mojito-removebg-preview.png" alt="Roti Bagel" />
+            </div>
+            <h2>mojito</h2>
+            <div class="d-flex justify-content-between">
+              <article>starting from 69</article>
+              <div
+                class="d-flex mb-3 align-items-center gap-1 justify-content-center"
+              >
+                <div class="stars mb-0 d-flex align-items-center gap-1">
+                  <i class="fas fa-star gold"></i>
+                  <i class="fas fa-star gold"></i>
+                  <i class="fas fa-star gold"></i>
+                  <i class="fas fa-star gold"></i>
+                  <i class="fas fa-star gold"></i>
+                </div>
+                <div style="font-size: 12px">(785)</div>
+              </div>
+            </div>
+            <button
+              type="button"
+              class="btn btn-custom w-100"
+              onclick="sendWhatsAppMessage(this)"
+            >
+              <i class="fa-solid fa-cart-shopping"></i>&ensp;Buy Now
+            </button>
+          </div>
+          <div class="shop1 mix roti-bagel">
+            <div class="shop-image">
+              <img src="assets/images/headersection/icecreamscoop-removebg-preview.png" alt="Roti Bagel" />
+            </div>
+            <h2>ice cream scoop</h2>
+            <div class="d-flex justify-content-between">
+              <article>starting from 29</article>
+              <div
+                class="d-flex mb-3 align-items-center gap-1 justify-content-center"
+              >
+                <div class="stars mb-0 d-flex align-items-center gap-1">
+                  <i class="fas fa-star gold"></i>
+                  <i class="fas fa-star gold"></i>
+                  <i class="fas fa-star gold"></i>
+                  <i class="fas fa-star gold"></i>
+                  <i class="fas fa-star gold"></i>
+                </div>
+                <div style="font-size: 12px">(352)</div>
+              </div>
+            </div>
+            <button
+              type="button"
+              class="btn btn-custom w-100"
+              onclick="sendWhatsAppMessage(this)"
+            >
+              <i class="fa-solid fa-cart-shopping"></i>&ensp;Buy Now
+            </button>
+          </div>
+          <div class="shop1 mix focaccia">
+            <div class="shop-image">
+              <img
+                src="assets/images/headersection/avilmilk-removebg-preview.png"
+                alt="Focaccia"
+              />
+            </div>
+            <h2>avilmilk</h2>
+            <div class="d-flex justify-content-between">
+              <article>29</article>
+              <div
+                class="d-flex mb-3 align-items-center gap-1 justify-content-center"
+              >
+                <div class="stars mb-0 d-flex align-items-center gap-1">
+                  <i class="fas fa-star gold"></i>
+                  <i class="fas fa-star gold"></i>
+                  <i class="fas fa-star gold"></i>
+                  <i class="fas fa-star gold"></i>
+                  <i class="fas fa-star gold"></i>
+                </div>
+                <div style="font-size: 12px">(999+)</div>
+              </div>
+            </div>
+            <button
+              type="button"
+              class="btn btn-custom w-100"
+              onclick="sendWhatsAppMessage(this)"
+            >
+              <i class="fa-solid fa-cart-shopping"></i>&ensp;Buy Now
+            </button>
+          </div>
+         
+        </div>
+      </div>
+      
+      <!-- NEW VIEW MORE BUTTON ADDED -->
+      <div class="view-more-container">
+        <button class="view-more-btn" id="viewMoreBtn" onclick="toggleViewMore()">
+          <span id="btnText">View more</span>
+          <i class="fas fa-chevron-down" id="btnIcon"></i>
+        </button>
+      </div>
+    </div>
+    <section id="products" class="products">
+    <div class="container">
+      <h2 class="products-title">Our Signature Cakes...</h2>
+      
+      <div class="categories-grid">
+        <!-- Birthday Cakes -->
+        <div class="category-card" onclick="navigateToCategory('birthday-cakes')">
+          <img src="assets/images/cakephotos/category img/premium.png" alt="Birthday Cakes" class="category-image">
+          <div class="category-info">
+            <h3>Birthday Cakes</h3>
+            <p>Starts from 499</p>
+            <button class="view-all-btn">View All</button>
+          </div>
+        </div>
+
+        <!-- Anniversary Cakes -->
+        <div class="category-card" onclick="navigateToCategory('anniversary-cakes')">
+          <img src="assets/images/cakephotos/category img/anniversary.png" alt="Anniversary Cakes" class="category-image">
+          <div class="category-info">
+            <h3>Anniversary Cakes</h3>
+            <p>Starts from 499</p>
+            <button class="view-all-btn">View All</button>
+          </div>
+        </div>
+
+        <!-- Wedding Cakes -->
+        <div class="category-card" onclick="navigateToCategory('wedding-cakes')">
+          <img src="assets/images/cakephotos/category img/wedding.png" alt="Wedding Cakes" class="category-image">
+          <div class="category-info">
+            <h3>Wedding Cakes</h3>
+            <p>Starts from 499</p>
+            <button class="view-all-btn">View All</button>
+          </div>
+        </div>
+
+        <!-- Kids Special -->
+        <div class="category-card" onclick="navigateToCategory('kids-special')">
+          <img src="assets/images/cakephotos/category img/kids.png" alt="Kids Special" class="category-image">
+          <div class="category-info">
+            <h3>Kids Special</h3>
+            <p>Starts from 499</p>
+            <button class="view-all-btn">View All</button>
+          </div>
+        </div>
+
+        <!-- Premium Cakes -->
+        <div class="category-card" onclick="navigateToCategory('premium-cakes')">
+          <img src="assets/images/cakephotos/category img/birthday.png" alt="Premium Cakes" class="category-image">
+          <div class="category-info">
+            <h3>Premium Cakes</h3>
+            <p>Starts from 499</p>
+            <button class="view-all-btn">View All</button>
+          </div>
+        </div>
+
+        <!-- Eggless & Sugarless -->
+        <div class="category-card" onclick="navigateToCategory('eggless-sugarless')">
+          <img src="assets/images/cakephotos/category img/eggless.png" alt="Eggless & Sugarless" class="category-image">
+          <div class="category-info">
+            <h3>Eggless & Sugarless</h3>
+            <p>Starts from 499</p>
+            <button class="view-all-btn">View All</button>
+          </div>
+        </div>
+
+        
+
+        
+      </div>
+    </div>
+  </section>
+  
+    </div>
+    
+    <!-- pizza feast-->
+<!-- ✅ Our BROASTED Combo Section -->
+<section class="latest-news">
+  <div class="container">
+    <h2 class="section-title"><span>Our BROASTED</span> combo</h2>
+    <div class="news-grid">
+
+      <!-- 1 -->
+      <div class="news-card">
+        <img src="/assets/images/boxcombo/snack.png" alt="Delicious Fried Chicken" />
+        <div class="news-content">
+          <h3>Delicious Snack Box</h3>
+          <p class="date">
+            Indulge in our Snack Box deal —
+            <span class="short-text">2pc Hot & Crispy Chicken...</span>
+            <span class="full-text" style="display: none;">
+              2pc Hot & Crispy Chicken , a soft Bun, golden French Fries, creamy Garlic Dip, and a chilled Regular Pepsi.
+            </span>
+          </p>
+          <div class="news-buttons">
+            <a href="#" class="read-more">Read More</a>
+            <a href="https://wa.me/917034914444?text=Hi%20Lassi%20Like!%20I'm%20interested%20in%20the%20Delicious%20Snack%20Box."
+               target="_blank" class="buy-now-btn">
+              <i class="fa-brands fa-whatsapp"></i> Buy Now
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <!-- 2 -->
+      <div class="news-card">
+        <img src="/assets/images/boxcombo/dinner.png" alt="Delicious Dinner Meal" />
+        <div class="news-content">
+          <h3>Delicious Dinner Meal</h3>
+          <p class="date">
+            Indulge in our Dinner deal —
+            <span class="short-text">4pc Hot & Crispy Chicken...</span>
+            <span class="full-text" style="display: none;">
+              4pc Hot & Crispy Chicken, 2 soft Bun, French Fries, creamy Garlic Dip, and a chilled Regular Pepsi.
+            </span>
+          </p>
+          <div class="news-buttons">
+            <a href="#" class="read-more">Read More</a>
+            <a href="https://wa.me/917034914444?text=Hi%20Lassi%20Like!%20I'm%20interested%20in%20the%20Delicious%20Dinner%20Meal."
+               target="_blank" class="buy-now-btn">
+              <i class="fa-brands fa-whatsapp"></i> Buy Now
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <!-- 3 -->
+      <div class="news-card">
+        <img src="/assets/images/boxcombo/family pack.png" alt="Delicious Family pack" />
+        <div class="news-content">
+          <h3>Delicious Family Pack</h3>
+          <p class="date">
+            Indulge in our Family Pack —
+            <span class="short-text">9pc Hot & Crispy Chicken...</span>
+            <span class="full-text" style="display: none;">
+              9pc Hot & Crispy Chicken, 4 soft Bun, Medium French Fries, creamy Garlic Dip, and a chilled 1.25L Pepsi.
+            </span>
+          </p>
+          <div class="news-buttons">
+            <a href="#" class="read-more">Read More</a>
+            <a href="https://wa.me/917034914444?text=Hi%20Lassi%20Like!%20I'm%20interested%20in%20the%20Delicious%20Family%20Pack."
+               target="_blank" class="buy-now-btn">
+              <i class="fa-brands fa-whatsapp"></i> Buy Now
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <!-- 4 -->
+      <div class="news-card">
+        <img src="/assets/images/boxcombo/chicken strips.png" alt="Delicious Chicken Strips" />
+        <div class="news-content">
+          <h3>Delicious Chicken Strips</h3>
+          <p class="date">
+            Indulge in our Chicken Strips deal —
+            <span class="short-text">2pc Hot & Crispy Chicken...</span>
+            <span class="full-text" style="display: none;">
+              2pc Hot & Crispy Chicken, a soft Bun, golden French Fries, creamy Garlic Dip, and a chilled Regular Pepsi.
+            </span>
+          </p>
+          <div class="news-buttons">
+            <a href="#" class="read-more">Read More</a>
+            <a href="https://wa.me/917034914444?text=Hi%20Lassi%20Like!%20I'm%20interested%20in%20the%20Delicious%20Chicken%20Strips."
+               target="_blank" class="buy-now-btn">
+              <i class="fa-brands fa-whatsapp"></i> Buy Now
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <!-- 5 -->
+      <div class="news-card">
+        <img src="/assets/images/boxcombo/lunchbox.png" alt="Delicious Lunch box" />
+        <div class="news-content">
+          <h3>Delicious Lunch Box</h3>
+          <p class="date">
+            Indulge in our Lunch Box deal —
+            <span class="short-text">3pc Hot & Crispy Chicken...</span>
+            <span class="full-text" style="display: none;">
+              3pc Hot & Crispy Chicken, a soft Bun, golden French Fries, creamy Garlic Dip, and a chilled Regular Pepsi.
+            </span>
+          </p>
+          <div class="news-buttons">
+            <a href="#" class="read-more">Read More</a>
+            <a href="https://wa.me/917034914444?text=Hi%20Lassi%20Like!%20I'm%20interested%20in%20the%20Delicious%20Lunch%20Box."
+               target="_blank" class="buy-now-btn">
+              <i class="fa-brands fa-whatsapp"></i> Buy Now
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <!-- 6 -->
+      <div class="news-card">
+        <img src="/assets/images/boxcombo/economy.png" alt="Delicious Economy box" />
+        <div class="news-content">
+          <h3>Delicious Economy Box</h3>
+          <p class="date">
+            Indulge in our Economy Box deal —
+            <span class="short-text">6pc Hot & Crispy Chicken...</span>
+            <span class="full-text" style="display: none;">
+              6pc Hot & Crispy Chicken, golden French Fries, creamy Garlic Dip, and a chilled Regular 200ml Pepsi.
+            </span>
+          </p>
+          <div class="news-buttons">
+            <a href="#" class="read-more">Read More</a>
+            <a href="https://wa.me/917034914444?text=Hi%20Lassi%20Like!%20I'm%20interested%20in%20the%20Delicious%20Economy%20Box."
+               target="_blank" class="buy-now-btn">
+              <i class="fa-brands fa-whatsapp"></i> Buy Now
+            </a>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+
+<!-- ✅ Pizza Feast Section -->
+<section class="latest-news">
+  <div class="container">
+    <h2 class="section-title"><span>Pizza</span> Feast</h2>
+    <div class="news-grid">
+
+      <!-- 1 -->
+      <div class="news-card">
+        <img src="/assets/images/pizza images/chese pizza.webp" alt="Cheese Pizza" />
+        <div class="news-content">
+          <h3>Cheese Pizza</h3>
+          <p class="date">
+            Get yours from ₹160 —
+            <span class="short-text">Classic cheesy delight...</span>
+            <span class="full-text" style="display: none;">
+              Classic cheesy delight a crispy crust loaded with gooey melted cheese.
+            </span>
+          </p>
+          <div class="news-buttons">
+            <a href="#" class="read-more">Read More</a>
+            <a href="https://wa.me/917034914444?text=Hi%20Lassi%20Like!%20I'm%20interested%20in%20the%20Cheese%20Pizza."
+               target="_blank" class="buy-now-btn">
+              <i class="fa-brands fa-whatsapp"></i> Buy Now
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <!-- 2 -->
+      <div class="news-card">
+        <img src="/assets/images/pizza images/super supreme pizza.jpg" alt="Super Supreme Pizza" />
+        <div class="news-content">
+          <h3>Super Supreme Pizza</h3>
+          <p class="date">
+            Get yours from ₹199 —
+            <span class="short-text">Flavor-packed pizza...</span>
+            <span class="full-text" style="display: none;">
+              Flavor-packed pizza, Loaded with pepperoni, sausage, veggies, and more.
+            </span>
+          </p>
+          <div class="news-buttons">
+            <a href="#" class="read-more">Read More</a>
+            <a href="https://wa.me/917034914444?text=Hi%20Lassi%20Like!%20I'm%20interested%20in%20the%20Super%20Supreme%20Pizza."
+               target="_blank" class="buy-now-btn">
+              <i class="fa-brands fa-whatsapp"></i> Buy Now
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <!-- 3 -->
+      <div class="news-card">
+        <img src="/assets/images/pizza images/pepperoni.jpg" alt="Pepperoni Pizza" />
+        <div class="news-content">
+          <h3>Pepperoni Pizza</h3>
+          <p class="date">
+            Get yours from ₹199 —
+            <span class="short-text">Classic spicy treat...</span>
+            <span class="full-text" style="display: none;">
+              Classic spicy treat, Loaded with spicy pepperoni slices and melted cheese.
+            </span>
+          </p>
+          <div class="news-buttons">
+            <a href="#" class="read-more">Read More</a>
+            <a href="https://wa.me/917034914444?text=Hi%20Lassi%20Like!%20I'm%20interested%20in%20the%20Pepperoni%20Pizza."
+               target="_blank" class="buy-now-btn">
+              <i class="fa-brands fa-whatsapp"></i> Buy Now
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <!-- 4 -->
+      <div class="news-card">
+        <img src="/assets/images/pizza images/zinger pizza.jpg" alt="Zinger Pizza" />
+        <div class="news-content">
+          <h3>Zinger Pizza</h3>
+          <p class="date">
+            Get yours from ₹199 —
+            <span class="short-text">Spicy & flavorful...</span>
+            <span class="full-text" style="display: none;">
+              Spicy & flavorful Topped with crispy zinger chicken pieces.
+            </span>
+          </p>
+          <div class="news-buttons">
+            <a href="#" class="read-more">Read More</a>
+            <a href="https://wa.me/917034914444?text=Hi%20Lassi%20Like!%20I'm%20interested%20in%20the%20Zinger%20Pizza."
+               target="_blank" class="buy-now-btn">
+              <i class="fa-brands fa-whatsapp"></i> Buy Now
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <!-- 5 -->
+      <div class="news-card">
+        <img src="/assets/images/pizza images/chicken tikka pizza.jpg" alt="Chicken Tikka Pizza" />
+        <div class="news-content">
+          <h3>Chicken Tikka Pizza</h3>
+          <p class="date">
+            Get yours from ₹199 —
+            <span class="short-text">Indian fusion pizza...</span>
+            <span class="full-text" style="display: none;">
+              Indian fusion pizza Topped with tender chicken tikka and spicy sauce.
+            </span>
+          </p>
+          <div class="news-buttons">
+            <a href="#" class="read-more">Read More</a>
+            <a href="https://wa.me/917034914444?text=Hi%20Lassi%20Like!%20I'm%20interested%20in%20the%20Chicken%20Tikka%20Pizza."
+               target="_blank" class="buy-now-btn">
+              <i class="fa-brands fa-whatsapp"></i> Buy Now
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <!-- 6 -->
+      <div class="news-card">
+        <img src="/assets/images/pizza images/vegetable pizza.jpg" alt="Vegetable Pizza" />
+        <div class="news-content">
+          <h3>Vegetable Pizza</h3>
+          <p class="date">
+            Get yours from ₹159 —
+            <span class="short-text">Colorful & healthy...</span>
+            <span class="full-text" style="display: none;">
+              Colorful & healthy Loaded with fresh veggies and cheese.
+            </span>
+          </p>
+          <div class="news-buttons">
+            <a href="#" class="read-more">Read More</a>
+            <a href="https://wa.me/917034914444?text=Hi%20Lassi%20Like!%20I'm%20interested%20in%20the%20Vegetable%20Pizza."
+               target="_blank" class="buy-now-btn">
+              <i class="fa-brands fa-whatsapp"></i> Buy Now
+            </a>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<section class="video-section">
+  <div class="video-heading">
+    <h2>It All Began Here</h2>
+    <p>Six years of love, flour, and passion.</p>
+  </div>
+
+  <div class="video-container" id="videoContainer">
+    <!-- YouTube embed -->
+    <iframe
+      id="videoFrame"
+      src="https://www.youtube.com/embed/cga0XL-UB10?autoplay=1&mute=1&loop=1&playlist=cga0XL-UB10&controls=1&modestbranding=1&rel=0"
+      title="Bakery Inauguration"
+      frameborder="0"
+      allow="autoplay; fullscreen"
+      allowfullscreen
+    ></iframe>
+
+    
+    
+  </div>
+</section>
+
+
+
+
+
+
+
+
+
+
+    <div class="bg-gallery" id="galery">
+      <div class="gallery-title">
+          <h2>Our Creation</h2>
+    
+          
+        </div>
+      
+      <div class="gallery-flex">
+        
+        <div class="image-one event">
+          <img src="assets/images/gallery/newburgir.jpg" alt="" />
+          <div class="overlay"></div>
+        </div>
+        <div class="inside-gallery">
+          <div class="left">
+            <div class="event">
+              <img src="assets/images/gallery/cofee.jpg" alt="" />
+              <div class="overlay"></div>
+            </div>
+            <div class="event">
+              <img src="assets/images/gallery/pizza.jpg" alt="" />
+              <div class="overlay"></div>
+            </div>
+          </div>
+          <div class="right">
+            <div class="event">
+              <img src="assets/images/gallery/juice.jpg" alt="" />
+              <div class="overlay"></div>
+            </div>
+            <div class="event">
+              <img src="assets/images/gallery/salad.jpg" alt="" />
+              <div class="overlay"></div>
+            </div>
+          </div>
+        </div>
+        <div class="last-image event">
+          <img src="assets/images/gallery/coldcoffee.jpg" alt="" />
+          <div class="overlay"></div>
+        </div>
+      </div>
+    </div>
+    <div class="bg-about" id="services">
+      <div class="about-flex">
+        <div class="about1">
+          <div>
+            <img
+              src="assets/images/others/footer-bg.jpg"
+              alt="footer-image-2"
+            />
+          </div>
+          <div class="about1-txt">
+            <h3 style="letter-spacing: 2px">orders</h3>
+            <div class="txt-inside">
+              <section>Via WhatsApp</section>
+              <section>+91 7034914444</section>
+            </div>
+            <div class="txt-inside">
+              <section>Via Store</section>
+              <section class="text-end">
+                Now open at Alanallur 
+              </section>
+            </div>
+          </div>
+        </div>
+        <div class="about1">
+          <div>
+            <img
+              src="assets/images/others/footer-bg.jpg"
+              alt="footer-image-2"
+            />
+          </div>
+          <div class="about1-txt">
+            <h3 style="letter-spacing: 2px">Operating Hours</h3>
+            <div class="txt-inside">
+              <section>Every Day</section>
+              <section>09.00AM - 10.00PM</section>
+            </div>
+            <div class="txt-inside">
+              <section>Sunday</Section>
+              <section>10.00AM - 10.00PM</section>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="faq" id="faq" style="max-width: 90%; margin: 0 auto">
+      <h2 class="faq-title">Frequently Asked Questions</h2>
+      <div
+        class="accordion"
+        style="
+          --bs-accordion-bg: #edf2f7;
+          --bs-accordion-color: #000;
+          --bs-accordion-border-color: #c7a17a;
+          --bs-accordion-btn-color: #edf2f7;
+          --bs-accordion-active-bg: #c7a17a;
+          --bs-accordion-btn-focus-box-shadow: none;
+        "
+        id="faq"
+      >
+        <div class="accordion-item">
+          <h2 class="accordion-header">
+            <button
+              class="accordion-button"
+              type="button"
+              data-bs-toggle="collapse"
+              data-bs-target="#collapseOne"
+              aria-expanded="true"
+              aria-controls="collapseOne"
+            >
+               What food items are available in your bakery?
+            </button>
+          </h2>
+          <div
+            id="collapseOne"
+            class="accordion-collapse collapse show"
+            data-bs-parent="#faq"
+          >
+            <div class="accordion-body">
+             We serve a wide variety including freshly baked pastries, cakes, breads, shawaya, alfaham, burgers, sandwiches, shawarmas and more..
+            </div>
+          </div>
+        </div>
+        <div class="accordion-item">
+          <h2 class="accordion-header">
+            <button
+              class="accordion-button collapsed"
+              type="button"
+              data-bs-toggle="collapse"
+              data-bs-target="#collapseTwo"
+              aria-expanded="false"
+              aria-controls="collapseTwo"
+            >
+              2. Can I order food online?
+            </button>
+          </h2>
+          <div
+            id="collapseTwo"
+            class="accordion-collapse collapse"
+            data-bs-parent="#faq"
+          >
+            <div class="accordion-body">
+              <strong>Ya,</strong>Yes, you can order cakes, pastries, shawaya, alfaham, and other items online through our website or delivery partners.
+            </div>
+          </div>
+        </div>
+        <div class="accordion-item">
+          <h2 class="accordion-header">
+            <button
+              class="accordion-button collapsed"
+              type="button"
+              data-bs-toggle="collapse"
+              data-bs-target="#collapseThree"
+              aria-expanded="false"
+              aria-controls="collapseThree"
+            >
+              How long do your products stay fresh after purchase?
+            </button>
+          </h2>
+          <div
+            id="collapseThree"
+            class="accordion-collapse collapse"
+            data-bs-parent="#faq"
+          >
+            <div class="accordion-body">
+              Cakes and pastries: best enjoyed within 1–2 days.Shawaya, alfaham, shawarma, and burgers: best consumed fresh on the same day.
+            </div>
+          </div>
+        </div>
+        <div class="accordion-item">
+          <h2 class="accordion-header">
+            <button
+              class="accordion-button collapsed"
+              type="button"
+              data-bs-toggle="collapse"
+              data-bs-target="#collapseFour"
+              aria-expanded="false"
+              aria-controls="collapseFour"
+            >
+              Do you offer delivery services?
+            </button>
+          </h2>
+          <div
+            id="collapseFour"
+            class="accordion-collapse collapse"
+            data-bs-parent="#faq"
+          >
+                        <div class="accordion-body">
+              <strong>Ya,</strong> Yes, we deliver cakes, pastries, shawaya, alfaham, and more to your doorstep within our service areas.
+            </div>
+          </div>
+        </div>
+        <div class="accordion-item">
+          <h2 class="accordion-header">
+            <button
+              class="accordion-button collapsed"
+              type="button"
+              data-bs-toggle="collapse"
+              data-bs-target="#collapseFive"
+              aria-expanded="false"
+              aria-controls="collapseFive"
+            >
+              How can I share a complaint or suggestion?
+            </button>
+          </h2>
+          <div
+            id="collapseFive"
+            class="accordion-collapse collapse"
+            data-bs-parent="#faq"
+          >
+            <div class="accordion-body">
+              You can reach us through our store, website contact form, or customer care number. Your feedback helps us improve.
+            </div>
+          </div>
+        </div>
+        <div class="accordion-item">
+          <h2 class="accordion-header">
+            <button
+              class="accordion-button collapsed"
+              type="button"
+              data-bs-toggle="collapse"
+              data-bs-target="#collapseSix"
+              aria-expanded="false"
+              aria-controls="collapseSix"
+            >
+              Are there discounts for bulk or party orders?
+            </button>
+          </h2>
+          <div
+            id="collapseSix"
+            class="accordion-collapse collapse"
+            data-bs-parent="#faq"
+          >
+            <div class="accordion-body">
+              <strong>Ya, </strong> Yes, we provide special offers and discounts for bulk orders such as birthday cakes, pastries, shawaya, alfaham, and party platters.
+            </div>
+          </div>
+        </div>
+        <div class="accordion-item">
+          <h2 class="accordion-header">
+            <button
+              class="accordion-button collapsed"
+              type="button"
+              data-bs-toggle="collapse"
+              data-bs-target="#collapseSeven"
+              aria-expanded="false"
+              aria-controls="collapseSeven"
+            >
+              What are your opening hours?
+            </button>
+          </h2>
+          <div
+            id="collapseSeven"
+            class="accordion-collapse collapse"
+            data-bs-parent="#faq"
+          >
+            <div class="accordion-body">
+              Most outlets are open daily from 8:00 AM to 11:00 PM (timings may vary by location).
+             
+            </div>
+          </div>
+        </div>
+        <div class="accordion-item">
+          <h2 class="accordion-header">
+            <button
+              class="accordion-button collapsed"
+              type="button"
+              data-bs-toggle="collapse"
+              data-bs-target="#collapseEight"
+              aria-expanded="false"
+              aria-controls="collapseEight"
+            >
+              Where are your bakery outlets located?
+            </button>
+          </h2>
+          <div
+            id="collapseEight"
+            class="accordion-collapse collapse"
+            data-bs-parent="#faq"
+          >
+            <div class="accordion-body">
+              Our main outlet is located in Alanallur, Palakkad... we will be lauching our other outlets in other cities all over kerala
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="footer pb-3" id="about">
+      <div class="footer-flex">
+        <div class="footer-brand">
+          <div>
+            <img
+            src="assets/images/logo/lassi logo white.png"
+            alt="Lassi Like Logo"
+            style="
+              height: 80px;
+              width: 80px;
+              object-fit: contain;
+              display: inline-block;
+              margin-top: 2px;
+            "
+          />
+          </div>
+          <section style="line-height: 1.45rem; margin-top: 10px">
+            <p>
+             welcome to Lassi Like! We are passionate
+              about serving you the finest bakery delights, from freshly baked
+              pastries to savory treats. Our commitment to quality and customer
+              satisfaction is unwavering. Whether you're craving a sweet treat
+              or a savory snack, we have something for everyone. Thank you for
+              choosing Lassi Like, where every bite is a moment of joy!
+            </p>
+
+          </section>
+        </div>
+
+        <div class="flex-space-between" style="flex-wrap: wrap">
+          <div class="social-media">
+            <section>
+              <h3>Social Media</h3>
+              <span
+                ><a href="https://www.facebook.com/people/Lassilike-Alanallur/pfbid0YJHLRd5HkPQ3MNCKfoQojKiavMFWT6sTEDuTPveRwA2M9XBVByjtgkAPzYZCV5Lal/"
+                  ><i class="fab fa-facebook-square"></i>&ensp;Facebook</a
+                ></span
+              >
+              <span
+                ><a href="https://www.instagram.com/lassi_like_alanallur/">
+                  <i class="fab fa-instagram"></i>&ensp;Instagram</a
+                ></span
+              >
+              
+              
+            </section>
+          </div>
+
+          <div class="contact">
+            <section>
+              <h3>Contact Us</h3>
+              <span
+                ><a href="https://wa.me/917034914444"
+                  ><i class="fab fa-whatsapp"></i>&ensp;+91 7034914444</a
+                ></span>
+                <span>
+  <a href="tel:+917034914444">
+    <i class="fa-solid fa-phone"></i>&ensp;+91 7034914444
+  </a>
+</span>
+<span>
+  <a href="tel:+919605841744">
+    <i class="fa-solid fa-phone"></i>&ensp;+91 9605841744  </a>
+</span>
+<span>
+  <a href="tel:+919986190363">
+    <i class="fa-solid fa-phone"></i>&ensp;+91 9986190363
+  </a>
+</span>
+
+              
+              <span>
+                <a href="mailto:lessilikelessilike@gmail.com"
+                  ><i class="fa-regular fa-envelope"></i
+                  >&ensp;lessilikelessilike@gmail.com</a
+                ></span
+              >
+            </section>
+          </div>
+
+          
+
+          <div class="outlet">
+            <section>
+              <h3>Store Locations</h3>
+              <span
+                ><a href="https://share.google/9xHjmpAhsXgX5LDVb"><i class="fas fa-map-marker-alt"></i>&ensp;Cresent Plaza, Chanthappadi , Alanallur Palakkad, kerala</a></span
+              >
+              
+             
+            </section>
+          </div>
+        </div>
+      </div>
+      <div
+        class="text-center copyright"
+        style="color: #edf2f7; margin-top: 4rem"
+      >
+        <p style="font-size: small"> © 2025 Lassi Lake Co. 🥤 | All Rights Reserved | Made with ❤️ & Lassi</p>
+      </div>
+    </div>
+    <script src="assets/js/main.js"></script>
+    <script src="assets/js/mixitup.min.js"></script>
+    <script>
+      var mixer = mixitup(".consts");
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    
+    
+    <script>
+const iframe = document.getElementById('videoFrame');
+const playPauseBtn = document.getElementById('playPauseBtn');
+const videoContainer = document.getElementById('videoContainer');
+
+let isPlaying = true; // since autoplay is ON initially
+
+// Toggle play/pause visually
+document.getElementById('overlayControls').addEventListener('click', () => {
+  if (isPlaying) {
+    // Pause (reload without autoplay)
+    iframe.src = "https://www.youtube.com/embed/cga0XL-UB10?autoplay=0&mute=1&loop=1&playlist=cga0XL-UB10&controls=1&modestbranding=1&rel=0";
+    playPauseBtn.innerHTML = '&#9658;';
+    isPlaying = false;
+  } else {
+    // Play (reload with autoplay)
+    iframe.src = "https://www.youtube.com/embed/cga0XL-UB10?autoplay=1&mute=1&loop=1&playlist=cga0XL-UB10&controls=1&modestbranding=1&rel=0";
+    playPauseBtn.innerHTML = '&#10074;&#10074;';
+    isPlaying = true;
+  }
+});
+
+// Mobile tap overlay
+let overlayTimeout;
+videoContainer.addEventListener('click', () => {
+  videoContainer.classList.add('show-overlay');
+  clearTimeout(overlayTimeout);
+  overlayTimeout = setTimeout(() => {
+    videoContainer.classList.remove('show-overlay');
+  }, 2000);
+});
+</script>
+<!-- WhatsApp Chat Widget -->
+<div id="whatsapp-chat-widget">
+    <div class="wa-widget-send-button">
+    <!-- WhatsApp Logo inside green circle -->
+    <div class="wa-widget-send-button">
+    <svg id="wa-widget-svg" width="28" height="28" viewBox="0 0 28 28" fill="none" xmlns="http://www.w3.org/2000/svg" style="pointer-events: none; width: auto; height: auto; stroke: none; fill: none; display: block;">
+          <g clip-path="url(#clip0_1029_374)">
+              <path fill-rule="evenodd" clip-rule="evenodd" d="M23.7881 4.06584C21.1709 1.44525 17.69 0.00132957 13.9811 0C6.33875 0 0.118997 6.21909 0.116338 13.8635C0.115008 16.3072 0.75387 18.6925 1.96711 20.7946L0 27.9796L7.34989 26.0517C9.37482 27.1566 11.655 27.7383 13.9752 27.739H13.9811C21.6222 27.739 27.8427 21.5192 27.8453 13.8748C27.8466 10.17 26.406 6.6871 23.7881 4.06651V4.06584ZM13.9811 25.3975H13.9765C11.909 25.3969 9.88075 24.8411 8.1111 23.7914L7.69027 23.5415L3.3286 24.6856L4.49264 20.4329L4.21874 19.9968C3.06533 18.162 2.45572 16.0413 2.45705 13.8642C2.45971 7.51078 7.6291 2.34138 13.9858 2.34138C17.0638 2.34271 19.957 3.54266 22.1328 5.72117C24.3086 7.89902 25.5059 10.7949 25.5046 13.8735C25.5019 20.2275 20.3326 25.3969 13.9811 25.3969V25.3975ZM20.3019 16.7673C19.9556 16.5938 18.2524 15.7561 17.9346 15.6405C17.6169 15.5248 17.3862 15.467 17.1555 15.814C16.9248 16.161 16.2607 16.9415 16.0586 17.1721C15.8565 17.4035 15.6544 17.4321 15.308 17.2585C14.9617 17.085 13.8455 16.7194 12.522 15.5394C11.4922 14.6206 10.7968 13.4866 10.5948 13.1395C10.3926 12.7925 10.5735 12.605 10.7463 12.4329C10.9018 12.2773 11.0926 12.028 11.2661 11.8259C11.4397 11.6238 11.4969 11.4789 11.6125 11.2482C11.7282 11.0168 11.6704 10.8148 11.584 10.6412C11.4975 10.4677 10.8048 8.76253 10.5156 8.06918C10.2344 7.39377 9.94858 7.48551 9.7365 7.47421C9.53439 7.46424 9.30373 7.46225 9.07239 7.46225C8.84104 7.46225 8.46605 7.54867 8.14831 7.89569C7.83056 8.24267 6.93573 9.08097 6.93573 10.7855C6.93573 12.49 8.17693 14.1381 8.35042 14.3694C8.52391 14.6008 10.7935 18.0995 14.2683 19.6006C15.0947 19.9576 15.7402 20.171 16.2434 20.3306C17.0731 20.5945 17.8283 20.5573 18.4252 20.4682C19.0907 20.3685 20.4748 19.6299 20.7633 18.8208C21.0518 18.0117 21.0518 17.3177 20.9654 17.1734C20.879 17.0292 20.6477 16.9421 20.3013 16.7686L20.3019 16.7673Z" fill="white"></path>
+          </g>
+          <defs>
+              <clipPath id="clip0_1029_374">
+                  <rect width="27.8453" height="28" fill="white"></rect>
+              </clipPath>
+          </defs>
+      </svg>
+</div>
+
+</div>
+
+
+    <div class="wa-chat-bubble">Chat with us</div>
+
+    <div class="wa-chat-box">
+        <div class="wa-chat-box-header">
+            <img class="wa-chat-box-brand" src="assets/images/logo/lassi logo white.png" alt="Lassi Like">
+            <span class="wa-chat-box-close">✕</span>
+        </div>
+        <div class="wa-chat-box-content-chat-welcome">🍰 How can we help you today?</div>
+        <a href="https://api.whatsapp.com/send?phone=917034914444" target="_blank" class="wa-chat-box-content-send-btn">
+            Start Chat
+        </a>
+        <div class="wa-chat-box-poweredby">
+            Powered by <a href="https://www.wati.io/" target="_blank">wati.io</a>
+        </div>
+    </div>
+</div>
+<script>
+const sendBtn = document.querySelector('.wa-widget-send-button');
+const chatBubble = document.querySelector('.wa-chat-bubble');
+const chatBox = document.querySelector('.wa-chat-box');
+const chatClose = document.querySelector('.wa-chat-box-close');
+
+// Step 1: Click send button → show chat bubble
+sendBtn.addEventListener('click', () => {
+    chatBubble.style.display = 'block';
+    sendBtn.style.display = 'none';
+});
+
+// Step 2: Click chat bubble → show chat box
+chatBubble.addEventListener('click', () => {
+    chatBox.style.display = 'flex';
+    chatBubble.style.display = 'none';
+});
+
+// Step 3: Click close button → hide chat box, show send button again
+chatClose.addEventListener('click', () => {
+    chatBox.style.display = 'none';
+    sendBtn.style.display = 'flex';
+});
+
+      function scrollToSection(event, sectionId, element) {
+        event.preventDefault();
+
+        const links = document.querySelectorAll("a");
+        links.forEach((link) => link.classList.remove("active"));
+
+        const activeLink = document.getElementById(element);
+        if (activeLink) {
+          activeLink.classList.add("active");
+        }
+
+        const targetElement = document.getElementById(sectionId);
+        const offset = -80;
+        const elementPosition =
+          targetElement.getBoundingClientRect().top + window.pageYOffset;
+        const offsetPosition = elementPosition + offset;
+        window.scrollTo({
+          top: offsetPosition,
+          behavior: "smooth",
+        });
+      }
+      function sendWhatsAppMessage(button) {
+  const productName = button
+    .closest(".shop1")
+    .querySelector("h2").innerText;          // ← gets the product name
+  const greeting = getGreeting();             // ← adds time-based greeting
+  const message = `Halo ${greeting}, I would like to order *${productName}*.`;  
+  const phoneNumber = "918848641974";         // ← WhatsApp number
+  const whatsappURL = `https://wa.me/${phoneNumber}?text=${encodeURIComponent(
+    message
+  )}`;
+  window.open(whatsappURL, "_blank");         // ← opens WhatsApp chat
+}
+
+      
+    </script>
+</script>
+<script>
+        function getGreeting() {
+        const hour = new Date().getHours();
+        if (hour >= 4 && hour < 12) {
+          return "Good morning";
+        } else if (hour >= 12 && hour < 15) {
+          return "Good afternoon";
+        } else if (hour >= 15 && hour < 18) {
+          return "Good evening";
+        } else {
+          return "Good night";
+        }
+      }
+
+      function sendWhatsAppMessage(button) {
+        const productName = button
+          .closest(".shop1")
+          .querySelector("h2").innerText;
+        const greeting = getGreeting();
+        const message = `Halo ${greeting}, I would like to order *${productName}*.`;
+        const phoneNumber = "917034914444";
+        const whatsappURL = `https://wa.me/${phoneNumber}?text=${encodeURIComponent(
+          message
+        )}`;
+        window.open(whatsappURL, "_blank");
+      }
+</script>
+  <div class="modal" data-modal>
+
+    <div class="modal-close-overlay" data-modal-overlay></div>
+
+    <div class="modal-content">
+
+      <button class="modal-close-btn" data-modal-close>
+        <ion-icon name="close-outline"></ion-icon>
+      </button>
+
+      <div class="newsletter-img">
+        <img src="./assets/images/logo/loho img.png" alt="subscribe newsletter" width="400" height="400">
+      </div>
+
+      <div class="newsletter">
+
+        <form action="#">
+
+          <div class="newsletter-header">
+
+            <h3 class="newsletter-title">get in touch with us.</h3>
+
+            <p class="newsletter-desc">
+              send your<b>contact</b> to get latest products and discount update.
+            </p>
+
+          </div>
+
+          <input type="phone" name="number" class="contact-field" placeholder="phone number" required>
+
+          <button type="submit" class="btn-newsletter">send</button>
+
+        </form>
+
+      </div>
+
+    </div>
+
+  </div>
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+  <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+
+
+
+
+  </body>
+</html>
